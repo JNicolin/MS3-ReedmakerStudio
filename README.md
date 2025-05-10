@@ -55,10 +55,48 @@ Enjoy playing! Enjoy your reed story!
    - [Acknowledgements](#acknowledgements) 
 
 # Features
+- add screenshots and comments to key features
 # User experience 
+## Design choices
+- Guding principles and inspiration
+## Fonts
+- .png and comments
+## Color schemes
+- .png and comments
+## User stories
+- List users stories from the GitHub project
+## Wireframes
+- .pngs and comments to the different views
+
 # Information architecture
+## Flowchart
+## ERD
+## Information objects
 # Technologies used
+## Design
+- Lucidchart
+## Frontend
+- HTML5
+- CSS3
+- Java Script
+- Font awesome
+- Favicon
+## Backend
+- Django framework
+- Python
+- PostgresSQL
+## Coding
+- Visual Studio Code
+- Git and GitHub
+## Testing
+- HTML validator
+- CSS validator
+- Lighthouse
+- Am I responsive
+## Deploy
+- Herouku
 # Agile methodology
+- Kanban
 # Version control
 # Deployment
 # Testing
