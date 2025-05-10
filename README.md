@@ -14,7 +14,7 @@ This is where this service comes in!
 - What reeds are on my top 10 ever?
 - What type of cane is in my favourite reeds?
 
-Enjoy playing! Enjoy your reed story!
+Enjoy playing! Enjoy your reed story! 
 
 ## Key features
 - **Account creation and login**
