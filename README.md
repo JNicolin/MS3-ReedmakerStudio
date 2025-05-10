@@ -70,6 +70,7 @@ Enjoy playing! Enjoy your reed story!
 
 # Information architecture
 ## Flowchart
+- [![Flowchart]()]
 ## ERD
 ## Information objects
 # Technologies used
