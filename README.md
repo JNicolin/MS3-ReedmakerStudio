@@ -85,10 +85,12 @@ Enjoy playing! Enjoy your reed story!
 # Information architecture
 ## Flowchart
 - Flowchart on the webpage 
-<img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="300"/>
+<img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="500"/>
+
 ## ERD
 - Enitity relationship diagram 
-<img src="assets/img/ERD.png" alt="ER-diagram" width="300"/>
+<img src="assets/img/ERD.png" alt="ER-diagram" width="500"/>
+
 # Technologies used
 ## Design
 - Lucidchart for Flowchart
