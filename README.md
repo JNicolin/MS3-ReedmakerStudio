@@ -70,8 +70,9 @@ Enjoy playing! Enjoy your reed story!
 
 # Information architecture
 ## Flowchart
-- [![Flowchart]()]
-## ERD
+- Flowchart on the webpage <img src="assets/WebFlowchart.png" alt="Flowchart for web" width="300"/>
+## Entity Relationship Diagram
+- Enitity relationship diagram <img src="assets/ERD.png" alt="ER-diagram" width="300"/>|
 ## Information objects
 # Technologies used
 ## Design
