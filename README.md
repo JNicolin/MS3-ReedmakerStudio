@@ -1,11 +1,13 @@
 # My reed story
 
 ## Introduction
-Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. A common challenge is to recall which reed has what characteristics, thus will be the perfect fit for an upcoming concert. 
+Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. 
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
-|<img src="assets/img/reedcase_1280.jpg" alt="Oboe reeds" width="200"/> |<img src="assets/img/clarinet_reeds.png" alt="Clarinet reeds" width="200"/>| 
+|<img src="assets/img/reedcase_1280.jpg" alt="Oboe reeds"/> |<img src="assets/img/clarinet_reeds.png" alt="Clarinet reeds"/>| 
+
+A common challenge is to recall which reed has what characteristics and would be the perfect match for an upcoming concert or gig. 
 
 This is where this service comes in!
 
@@ -66,7 +68,8 @@ Enjoy playing! Enjoy your reed story!
 ## Fonts
 - .png and comments
 ## Color schemes
-- .png and comments
+- Comment on colorscheme
+<img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="300"/> 
 ## User stories
 - List users stories from the GitHub project
 ## Wireframes
