@@ -5,6 +5,8 @@ Musicians playing instruments with a reed spend a lot of time obsessing over whi
 
 This is where this service comes in!
 
+<img src="assets/img/reedcase_1280.jpg" alt="ER-diagram" width="400"/>
+
 "My reed story" combines a digital version of a reed case with a Library. Use this service to create a Digital twin of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to tell you a story about your reed-preferences and make life as a musician so exciting.   
 
 ## What to expect as a user
@@ -70,9 +72,9 @@ Enjoy playing! Enjoy your reed story!
 
 # Information architecture
 ## Flowchart
-- Flowchart on the webpage <img src="assets/WebFlowchart.png" alt="Flowchart for web" width="300"/>
+- Flowchart on the webpage <img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="300"/>
 ## Entity Relationship Diagram
-- Enitity relationship diagram <img src="assets/ERD.png" alt="ER-diagram" width="300"/>|
+- Enitity relationship diagram <img src="assets/img/ERD.png" alt="ER-diagram" width="300"/>
 ## Information objects
 # Technologies used
 ## Design
