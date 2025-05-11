@@ -3,9 +3,11 @@
 ## Introduction
 Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. A common challenge is to recall which reed has what characteristics, thus will be the perfect fit for an upcoming concert. 
 
-This is where this service comes in!
+| Double blade reeds | Single blade reeds |
+| --------- | ---------|
+|<img src="assets/img/reedcase_1280.jpg" alt="Oboe reeds" width="200"/> |<img src="assets/img/clarinet_reeds.png" alt="Clarinet reeds" width="200"/>| 
 
-<img src="assets/img/reedcase_1280.jpg" alt="ER-diagram" width="400"/>
+This is where this service comes in!
 
 "My reed story" combines a digital version of a reed case with a Library. Use this service to create a Digital twin of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to tell you a story about your reed-preferences and make life as a musician so exciting.   
 
@@ -106,4 +108,6 @@ Enjoy playing! Enjoy your reed story!
 # Testing
 # Known issues and Future features
 # Credits
+- pixabay images
+- unsplash images
 
