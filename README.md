@@ -69,17 +69,18 @@ Enjoy playing! Enjoy your reed story!
 - .png and comments
 ## Color schemes
 - Comment on colorscheme
-<img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="300"/> 
+<img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
+
 ## User stories
 - List users stories from the GitHub project
 ## Wireframes
 | Start page | Reeds list | Reed detail |
-| --------- | ---------| ------ |
-|<img src="assets/img/WF_Startpage.png" alt="Startpage"/> | <img src="assets/img/WF_ReedsListPage.png" alt="Reed list"/>| <img src="assets/img/WF_ReedDetailPage.png" alt="Reed detail"/> |
+| --------- | ---------| -------- |
+|<img src="assets/img/WF_Startpage.png" alt="Startpage"/> | <img src="assets/img/WF_ReedsListPage.png" alt="Reed list"/> | <img src="assets/img/WF_ReedDetailPage.png" alt="Reed detail"/> |
 
 | Login form | Post list | Post detail |
-| --------- | ---------| ------ |
-|<img src="assets/img/WF_LoginForm.png" alt="Login"/> | <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/>| <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> |
+| --------- | --------- | --------- |
+|<img src="assets/img/WF_LoginForm.png" alt="Login"/> | <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/> | <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> |
 
 # Information architecture
 ## Flowchart
