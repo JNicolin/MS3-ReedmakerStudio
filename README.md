@@ -73,17 +73,25 @@ Enjoy playing! Enjoy your reed story!
 ## User stories
 - List users stories from the GitHub project
 ## Wireframes
-- .pngs and comments to the different views
+| Start page | Reeds list | Reed detail |
+| --------- | ---------| ------ |
+|<img src="assets/img/WF_Startpage.png" alt="Startpage"/> | <img src="assets/img/WF_ReedsListPage.png" alt="Reed list"/>| <img src="assets/img/WF_ReedDetailPage.png" alt="Reed detail"/> 
+
+| Login form | Post list | Post detail |
+| --------- | ---------| ------ |
+|<img src="assets/img/WF_LoginForm.png" alt="Login"/> | <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/>| <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> 
 
 # Information architecture
 ## Flowchart
-- Flowchart on the webpage <img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="300"/>
-## Entity Relationship Diagram
-- Enitity relationship diagram <img src="assets/img/ERD.png" alt="ER-diagram" width="300"/>
-## Information objects
+- Flowchart on the webpage 
+<img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="300"/>
+## ERD
+- Enitity relationship diagram 
+<img src="assets/img/ERD.png" alt="ER-diagram" width="300"/>
 # Technologies used
 ## Design
-- Lucidchart
+- Lucidchart for Flowchart
+- Balsamiq for Wireframes
 ## Frontend
 - HTML5
 - CSS3
