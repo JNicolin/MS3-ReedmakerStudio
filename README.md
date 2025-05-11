@@ -84,10 +84,10 @@ Enjoy playing! Enjoy your reed story!
 
 # Information architecture
 ## Flowchart
-- Flowchart on the webpage 
+- Webpage, overall
 <img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="500"/>
 
-## ERD
+## Database design
 - Enitity relationship diagram 
 <img src="assets/img/ERD.png" alt="ER-diagram" width="500"/>
 
