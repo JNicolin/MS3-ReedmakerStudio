@@ -1,6 +1,11 @@
-/* CSS HEX */
---beige: #e3e7d3ff;
---silver: #bdc2bfff;
---battleship-gray: #989c94ff;
---black-olive: #25291cff;
---vanilla: #e6e49fff; 
+/* Global fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Colorscheme */
+:root {
+    --lightBackground: #e3e7d3ff; /* beige */
+    --darkBackground: #989c94ff; /*battleship-grey*/
+    --lightHighlight: #bdc2bfff; /* silver */
+    --darkHighlight: #25291cff; /*black-olive */
+    --lightSignal: #e6e49fff; /* vanilla */
+}

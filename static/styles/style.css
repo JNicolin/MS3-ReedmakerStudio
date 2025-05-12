@@ -1,9 +1,0 @@
-/* Global fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Colorscheme */
---lightBackground: #e3e7d3ff; /* beige */
---darkBackground: #989c94ff; /*battleship-grey*/
---lightHighlight: #bdc2bfff; /* silver */
---darkHighlight: #25291cff; /*black-olive */
---lightSignal: #e6e49fff; /* vanilla */
