@@ -1,4 +1,4 @@
-# My reed story
+# Welcome to Reedmaker's blog
 
 ## Introduction
 Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. 
@@ -34,23 +34,35 @@ Make progress as a reedmaker! Enjoy your reed story!
 8. [Known Issues and Future Features](#known-issues-and-future-features)
 9. [Credits](#credits)
 
-# 1. Features
-## Become a member, create a user account to access the full content
-A visitor on the website can access public information such as read access to the Reedmaking blog, public reed specifications and comments. A visitor can choose to become a community member by signing up for a user account. Signed in user can post data about reeds and to post comments on reeds and blog-posts. 
-## Post data about one of your reeds
-A signed in user can post data about their reeds, such as material, measures, quality of sound and at which event it was played.
-## Organize your registered reeds in categories - or "reed cases"
-A signed in user can organize posted reeds in categories, eg reeds for "chamber music", "symphony orchestra", "club gigs" or "practice".
-## Filter and search for reeds based on keywords and characteristics
-A signed in user can search among posted reeds to recall what types of reeds have a sound quailty of "bright" or what reeds have been used for "jazz gigs". 
-## Make a selection of your reeds public for others to see and comment
-A signed in user can chose wether to keep reed specifications to herself, or if to make them publically available for anyone to see. Other signed in users can post comments to public reed posts. 
-## Post articles about reedmaking
-A signed in user can create an article about some aspect of Reedmaking. A user may have a reflection on the selection of cane or about a tool that may be of interest to others. 
-## Comment on articles about reedmaking or published reeds
-A signed in user can post comments to articles about reedmaking or to reeds that another user has chosen to make public.
+# Features
+- Become a member, create a user account to access the full content
+  
+  A visitor on the website can access public information such as read access to the Reedmaking blog, public reed specifications and comments. A visitor can choose to become a community member by signing up for a user account. Signed in user can post data about reeds and to post comments on reeds and blog-posts. 
 
-# 2. User experience 
+- Post data about one of your reeds
+  
+  A signed in user can post data about their reeds, such as material, measures, quality of sound and at which event it was played.
+- Organize your registered reeds in categories - or "reed cases"
+  
+  A signed in user can organize posted reeds in categories, eg reeds for "chamber music", "symphony orchestra", "club gigs" or "practice".
+
+- Filter and search for reeds based on keywords and characteristics
+  
+  A signed in user can search among posted reeds to recall what types of reeds have a sound quailty of "bright" or what reeds have been used for "jazz gigs". 
+
+- Make a selection of your reeds public for others to see and comment
+  
+  A signed in user can chose wether to keep reed specifications to herself, or if to make them publically available for anyone to see. Other signed in users can post comments to public reed posts. 
+
+- Post articles about reedmaking
+  
+  A signed in user can create an article about some aspect of Reedmaking. A user may have a reflection on the selection of cane or about a tool that may be of interest to others. 
+
+- Comment on articles about reedmaking or published reeds
+  
+  A signed in user can post comments to articles about reedmaking or to reeds that another user has chosen to make public.
+
+# User experience 
 ## Design choices, guiding principles
 - **Recognition.** One common header and footer is applied for all pages across the site. 
 - **Responsiveness.** The content is designed to be accessible equally well on a mobile client as on a full size screen.
@@ -78,14 +90,14 @@ A signed in user can post comments to articles about reedmaking or to reeds that
 | -------------- | ---------------- |
 | <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/> | <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> |
 
-# 3. Information architecture
+# Information architecture
 ## Flowchart Webb
 <img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="500"/>
 
 ## Database design, ERD
 <img src="assets/img/ERD.png" alt="ER-diagram" width="500"/>
 
-# 4. Technologies used
+# Technologies used
 ## Laguages and frameworks
 - HTML
 - CSS
@@ -114,7 +126,7 @@ A signed in user can post comments to articles about reedmaking or to reeds that
 - HTML validator
 - CSS validator
 - JS validator
-# 5. Agile methodology
+# Agile methodology
 ## Epics and user stories to plan the project
 ### Epic 1: Site administration
 As an administrator of the site I need to manage user accounts, posts and comments, to ensure that the site is kept consistent, ethic and appreciated over time.\
