@@ -11,16 +11,9 @@ A common challenge is to recall which reed has what characteristics and would be
 
 This is where this service comes in!
 
-"My reed story" combines a digital version of a reed case with a Library. Use this service to create a Digital twin of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to tell you a story about your reed-preferences and make life as a musician so exciting.   
+Use this application to post a digital record of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to help you learn from past experiences and to identify reed preferences. Use this application to post articles about the reedmaking process and comments about other musicians reeds and articles. 
 
-## What to expect as a user
-"My reed story" can help you find answers to questions like 
-- What reeds worked well for a Mozart chamber concert, a Mahler symphony or a Ravel solo performance 
-- What reeds were better in wintertime, summertime?
-- What reeds are on my top 10 ever?
-- What type of cane is in my favourite reeds?
-
-Enjoy playing! Enjoy your reed story! 
+Make progress as a reedmaker! Enjoy your reed story! 
 
 ## Key features
 - **Account creation and login**
