@@ -61,7 +61,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 ## Fonts
 - .png and comments
 ## Color schemes
-- Comment on colorscheme
+- The colorscheme was selected with the basic color of cane and wood in mind. The slightly beige and yellow tones combined with some matching colors were chosen to give a clean yet stylish impression.  
 <img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
 
 ## User stories
@@ -76,31 +76,32 @@ Make progress as a reedmaker! Enjoy your reed story!
 |<img src="assets/img/WF_LoginForm.png" alt="Login"/> | <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/> | <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> |
 
 # Information architecture
-## Flowchart
-- Webpage, overall
+## Flowchart Webb
 <img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="500"/>
 
-## Database design
-- Enitity relationship diagram 
+## Database design, ERD
 <img src="assets/img/ERD.png" alt="ER-diagram" width="500"/>
 
 # Technologies used
-## Design
-- Lucidchart for Flowchart
-- Balsamiq for Wireframes
-## Frontend
-- HTML5
-- CSS3
-- Java Script
-- Font awesome
-- Favicon
-## Backend
-- Django framework
+## Laguages and frameworks
+- HTML
+- CSS
+- JavaScript
+- Django
 - Python
+## Databases
 - PostgresSQL
-## Coding
-- Visual Studio Code
-- Git and GitHub
+## Tools
+- Visual Studio Code for coding
+- Git and GitHub for code versioning and project repo
+- GitHub project for planning and user stories
+- Lucidchart for the flowchart
+- Balsamiq for the wireframes
+- Coolors.com for the color scheme
+- Font awesome for the set of fonts
+- Favicon for icons 
+- Pixabay for royalty free images
+- Unsplash for royalty free images
 ## Testing
 - HTML validator
 - CSS validator
@@ -110,11 +111,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 - Herouku
 # Agile methodology
 - Kanban
-# Version control
-# Deployment
-# Testing
 # Known issues and Future features
+- TBD
 # Credits
-- pixabay images
-- unsplash images
-
+- TBD 
