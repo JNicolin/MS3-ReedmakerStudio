@@ -126,6 +126,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 - HTML validator
 - CSS validator
 - JS validator
+- PEPCI8 Linter https://pep8ci.herokuapp.com/
 # Agile methodology
 ## Epics and user stories to plan the project
 ### Epic 1: Site administration
