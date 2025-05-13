@@ -5,7 +5,7 @@ Musicians playing instruments with a reed spend a lot of time obsessing over whi
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
-|<img src="assets/img/reedcase_1280.jpg" alt="Oboe reedcase"/> |<img src="assets/img/clarinet_reeds.png" alt="Clarinet reeds"/>| 
+|<img src="static/images/reedcase_1280.jpg" alt="Oboe reedcase"/> |<img src="static/images/clarinet_reeds.png" alt="Clarinet reeds"/>| 
 
 A common challenge is to recall which reed has what characteristics and would be the perfect match for an upcoming concert or gig. 
 
@@ -71,31 +71,31 @@ Make progress as a reedmaker! Enjoy your reed story!
 
 ## Fonts
 - The set of fonts was chosen for a modern and crisp look on the Website. Montserrat and Roboto are both appreciated as being clear and easy to read. Elegant yet professional.  
-<img src="assets/img/Fonts.png" alt="Selected fonts" width="400"/> 
+<img src="static/images/Fonts.png" alt="Selected fonts" width="400"/> 
 
 ## Color schemes
 - The colorscheme was selected with the basic color of cane and wood in mind. The slightly beige and yellow tones combined with some matching colors were chosen to give a clean yet stylish impression. 
-<img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
+<img src="static/images/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
 
 ## Wireframes
 | Start page | Login form | 
 | ---------  | ---------  |
-|<img src="assets/img/WF_Startpage.png" alt="Startpage"/> | <img src="assets/img/WF_LoginForm.png" alt="Login"/> |
+|<img src="static/images/WF_Startpage.png" alt="Startpage"/> | <img src="static/images/WF_LoginForm.png" alt="Login"/> |
 
 | Reeds list page | Reed detail page |
 |  ---------------| ------------| 
-| <img src="assets/img/WF_ReedsListPage.png" alt="Reed list"/> | <img src="assets/img/WF_ReedDetailPage.png" alt="Reed detail"/> |
+| <img src="static/images/WF_ReedsListPage.png" alt="Reed list"/> | <img src="static/images/WF_ReedDetailPage.png" alt="Reed detail"/> |
 
 | Post list page | Post detail page |
 | -------------- | ---------------- |
-| <img src="assets/img/WF_BlogPostsList.png" alt="Post list"/> | <img src="assets/img/WF_BlogPostPage.png" alt="Post detail"/> |
+| <img src="static/images/WF_BlogPostsList.png" alt="Post list"/> | <img src="static/images/WF_BlogPostPage.png" alt="Post detail"/> |
 
 # Information architecture
 ## Flowchart Webb
-<img src="assets/img/WebFlowchart.png" alt="Flowchart for web" width="500"/>
+<img src="static/images/WebFlowchart.png" alt="Flowchart for web" width="500"/>
 
 ## Database design, ERD
-<img src="assets/img/ERD.png" alt="ER-diagram" width="500"/>
+<img src="static/images/ERD.png" alt="ER-diagram" width="500"/>
 
 # Technologies used
 ## Laguages and frameworks
@@ -159,7 +159,7 @@ As a visitor of the site, I want to take part of published content, and to post 
   - As a vistor, I want to post comments to posted reed specifications, to show appreciation and contribution
 
 ## Kanban to visualize and follow progress
-<img src="assets/img/Kanban.png" alt="Kanban" width="400"/> 
+<img src="static/images/Kanban.png" alt="Kanban" width="400"/> 
 
 # Testing
 - TBD
