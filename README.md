@@ -74,7 +74,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 <img src="assets/img/Fonts.png" alt="Selected fonts" width="400"/> 
 
 ## Color schemes
-- The colorscheme was selected with the basic color of cane and wood in mind. The slightly beige and yellow tones combined with some matching colors were chosen to give a clean yet stylish impression.  
+- The colorscheme was selected with the basic color of cane and wood in mind. The slightly beige and yellow tones combined with some matching colors were chosen to give a clean yet stylish impression. 
 <img src="assets/img/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
 
 ## Wireframes
