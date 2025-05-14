@@ -2,5 +2,8 @@ core.microsoft*
 core.mongo*
 core.python*
 .venv/
-env.py
+.env
 __pycache__/
+*.pyc
+db.sqlite3
+/staticfiles
