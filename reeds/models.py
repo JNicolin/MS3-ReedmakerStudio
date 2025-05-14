@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from django.contrib.contenttypes.fields import GenericRelation
 from comments.models import Comment
 from .choices import Sound, Resistance, Response, Instrument, Visibility
@@ -11,7 +10,6 @@ class Reed(models.Model):
     title = models.CharField(max_length=50)
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reed_maker")
     description = models.TextField(null=True)
-    photo = CloudinaryField('image', null=True, blank=True)
     instrument = models.CharField(max_length=4, choices=Instrument.choices, default=Instrument.OBOE)
     character_resistance = models.IntegerField(choices=Resistance.choices, default=Resistance.MEDIUM)
     character_sound = models.IntegerField(choices=Sound.choices, default=Sound.ROUND)
