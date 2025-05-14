@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.contenttypes.fields import GenericRelation
+from comments.models import Comment
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -14,5 +16,9 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
+    comments = GenericRelation(Comment)
+
+    Class Meta:
+        ordering = ["-created_on"]
     def __str__(self):
-        return self.title
+        return f"the title of this post is: {self.title} ¶ Written by {self.author}"
