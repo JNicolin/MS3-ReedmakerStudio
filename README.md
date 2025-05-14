@@ -115,6 +115,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 ### Design
 - Lucidchart for the flowchart
 - Balsamiq for the wireframes
+- dbdiagram for ERD
 - Coolors.com for the color scheme
 - Font awesome for the set of fonts
 - Favicon for icons 
