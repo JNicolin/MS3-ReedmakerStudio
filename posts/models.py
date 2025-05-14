@@ -18,7 +18,7 @@ class Post(models.Model):
 
     comments = GenericRelation(Comment)
 
-    Class Meta:
+    class Meta:
         ordering = ["-created_on"]
     def __str__(self):
         return f"the title of this post is: {self.title} ¶ Written by {self.author}"
