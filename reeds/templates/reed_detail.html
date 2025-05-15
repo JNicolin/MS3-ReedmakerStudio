@@ -1,0 +1,7 @@
+<h1>List of My reeds</h1>
+<a href="{% url 'reed_create' %}">Add a new Reed</a>
+<ul>
+  {% for reed in reeds %}
+    <li><a href="{% url 'reed_detail' reed.pk %}">{{ reed.title }}</a></li>
+  {% endfor %}
+</ul>
