@@ -7,7 +7,7 @@ from comments.forms import CommentForm
 
 # READ: List
 def reed_list(request):
-    posts = Reed.objects.all().order_by('-created_on')
+    reeds = Reed.objects.all().order_by('-created_on')
     return render(request, 'reeds/reed_list.html', {'reeds': reeds})
 
 # READ: Detail

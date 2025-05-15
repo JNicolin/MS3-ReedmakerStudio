@@ -9,9 +9,11 @@ class ReedForm(forms.ModelForm):
 class EventForm(forms.ModelForm):
     class Meta:
         model = Event
+        exclude = ['created_on', 'updated_on']
 
 class RepertoireForm(forms.ModelForm):
     class Meta:
         model = Repertoire
+        exclude = ['created_on', 'updated_on']
 
         
