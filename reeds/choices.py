@@ -3,7 +3,7 @@ from django.db import models
 class Visibility(models.IntegerChoices):
     PRIVATE = 0, "Private"
     PUBLIC = 1, "Public"
-
+    
 class Resistance(models.IntegerChoices):
     SOFT = 0, "Soft"
     MEDIUM = 1, "Medium"
@@ -20,6 +20,12 @@ class Response(models.IntegerChoices):
     LIGHT = 0, "Light"
     ACCURATE = 1, "Accurate"
     LATE = 2, "Late"
+
+class Rating(models.IntegerChoices):
+    USELESS = 0, "Useless"
+    PRACTICE = 1, "Practice"
+    PERFORMANCE = 2, "Performance"
+    PREMIUM = 3, "Premium"
 
 class Instrument(models.TextChoices):
     OBOE = "ob", "Oboe"

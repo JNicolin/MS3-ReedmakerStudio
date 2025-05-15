@@ -4,13 +4,13 @@ from .models import Post
 from .forms import PostForm
 
 # READ: List
-#def post_list(request):
-#    posts = Post.objects.all().order_by('-created_on')
-#    return render(request, 'posts/post_list.html', {'posts': posts})
+def post_list(request):
+    posts = Post.objects.all().order_by('-created_on')
+    return render(request, 'posts/post_list.html', {'post_list': posts})
 
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1)
-    template_name = "post_list.html"
+#class PostList(generic.ListView):
+#   queryset = Post.objects.filter(status=1)
+#   template_name = "post_list.html"
 
 # READ: Detail
 def post_detail(request, pk):

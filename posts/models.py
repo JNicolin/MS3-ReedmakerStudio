@@ -7,13 +7,13 @@ from comments.models import Comment
 STATUS = ((0, "Draft"), (1, "Published"))
 
 class Post(models.Model):
-    title = models.CharField(max_length=200,unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    body = models.TextField()
+    title = models.CharField(max_length=50)
+    slug = models.SlugField(max_length=75, unique=True)
+    body = models.TextField(blank=True)
+    excerpt = models.TextField(blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
-    excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
     comments = GenericRelation(Comment)
@@ -21,4 +21,4 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"]
     def __str__(self):
-        return f"the title of this post is: {self.title} ¶ Written by {self.author}"
+        return f"{self.title}, {self.author}"

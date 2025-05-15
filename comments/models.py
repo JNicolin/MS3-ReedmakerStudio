@@ -5,8 +5,8 @@ from django.contrib.contenttypes.models import ContentType
 
 # Create your models here.
 class Comment(models.Model):
-    title = models.TextField(max_length=200)
-    body = models.TextField()
+    title = models.CharField(max_length=50)
+    body = models.TextField(blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -20,4 +20,4 @@ class Comment(models.Model):
     class Meta:
         ordering = ["-created_on"]
     def __str__(self):
-        return f"{self.body} by {self.author}"
+        return f"{self.title} by {self.author}"
