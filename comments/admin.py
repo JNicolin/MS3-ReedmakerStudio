@@ -10,3 +10,4 @@ class CommentInline(GenericTabularInline):
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('author', 'body', 'created_on', 'content_type', 'object_id')
     search_fields = ('author__username', 'body')
+    
