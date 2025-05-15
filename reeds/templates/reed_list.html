@@ -1,0 +1,22 @@
+<h2>{{ reed.title }}</h2>
+<p>{{ reed.description }}</p>
+
+{% if user == reed.creator %}
+  <a href="{% url 'reed_update' reed.pk %}">Redigera</a>
+  <a href="{% url 'reed_delete' reed.pk %}">Ta bort</a>
+{% endif %}
+
+<h3>Kommentarer</h3>
+{% for comment in comments %}
+  <p><strong>{{ comment.author }}</strong>: {{ comment.content }}</p>
+{% endfor %}
+
+{% if user.is_authenticated %}
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Lägg till kommentar</button>
+  </form>
+{% else %}
+  <p><a href="{% url 'login' %}">Logga in</a> för att kommentera.</p>
+{% endif %}

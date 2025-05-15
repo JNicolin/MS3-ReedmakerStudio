@@ -1,0 +1,7 @@
+<h2>Are you sure you want to delete?</h2>
+<form method="post">
+  {% csrf_token %}
+  <p>Do you want to delete "{{ reed.title }}"?</p>
+  <button type="submit">Yes, continue</button>
+  <a href="{% url 'reed_detail' reed.pk %}">Quit</a>
+</form>
