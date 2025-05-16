@@ -61,7 +61,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'sv-se'
-TIME_ZONE = 'europe/stockholm'
+TIME_ZONE = 'Europe/Stockholm'
 USE_I18N = True
 USE_TZ = True
 
