@@ -57,4 +57,4 @@ def reed_delete(request, pk):
     if request.method == 'POST':
         reed.delete()
         return redirect('reed_list')
-    return render(request, 'posts/post_confirm_delete.html', {'reed': reed})
+    return render(request, 'reeds/reed_confirm_delete.html', {'reed': reed})
