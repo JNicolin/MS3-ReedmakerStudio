@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from reeds.views import home
 
 urlpatterns = [
-    # path('', home.view, name='home'),
+    path('', home, name='home'),
     path('blog/', include("posts.urls"), name='posts-urls'),
     path('reeds/', include("reeds.urls"), name='reeds-urls'),
     path('admin/', admin.site.urls),
-    path('login/', admin.site.urls),
 ]

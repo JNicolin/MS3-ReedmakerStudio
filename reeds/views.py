@@ -3,7 +3,11 @@ from .models import Reed
 from .forms import ReedForm
 from comments.forms import CommentForm
 
-# CRUD views for Reed
+# Route for the home view
+def home(request):
+    return render(request, 'home.html')
+
+## CRUD views for Reed
 
 # READ: List
 def reed_list(request):

@@ -38,7 +38,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'reedproject.urls'
 WSGI_APPLICATION = 'reedproject.wsgi.application'
 
-TEMPLATES = [0][
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
