@@ -1,7 +1,13 @@
-<h1>All posts</h1>
-<a href="{% url 'post_create' %}">Create new post</a>
-<ul>
-  {% for post in post_list %}
-    <li><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></li>
+{% extends 'base.html' %}
+{% block title %}All posts{% endblock %}
+{% block content %}
+<h1 class="mb-4">All posts</h1>
+<a href="{% url 'post_create' %}" class="btn btn-primary mb-3">New post</a>
+<ul class="list-group">
+  {% for post in posts %}
+    <li class="list-group-item">
+      <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
+{% endblock %}

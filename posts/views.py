@@ -7,8 +7,10 @@ from .forms import PostForm
 
 # READ: List
 def post_list(request):
-    posts = Post.objects.all().order_by('-created_on')
-    return render(request, 'posts/post_list.html', {'post_list': posts})
+    posts = Post.objects.filter(status=1).order_by('-created_on')
+    return render(request, "posts/post_list.html", {
+        "posts": posts
+    })
 
 # READ: Detail
 def post_detail(request, pk):
