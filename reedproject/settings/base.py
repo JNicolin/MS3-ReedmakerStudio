@@ -20,6 +20,8 @@ INSTALLED_APPS = [
     'posts',
     'reeds',
     'comments',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -36,7 +38,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'reedproject.urls'
 WSGI_APPLICATION = 'reedproject.wsgi.application'
 
-TEMPLATES = [
+TEMPLATES = [0][
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
@@ -71,3 +73,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Crispy forms declarations
+CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap5"]
+CRISPY_TEMPLATE_PACK = "bootstrap5"
