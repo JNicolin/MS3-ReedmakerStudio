@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Reed
+from .choices import Rating, Instrument
 from .forms import ReedForm
 from comments.forms import CommentForm
 
@@ -11,8 +12,25 @@ def home(request):
 
 # READ: List
 def reed_list(request):
-    reeds = Reed.objects.all().order_by('-created_on')
-    return render(request, 'reeds/reed_list.html', {'reeds': reeds})
+    reeds = Reed.objects.all()
+    instrument = request.GET.get("instrument")
+    rating = request.GET.get("rating")
+    sort = request.GET.get("sort")
+
+    if instrument:
+        reeds = reeds.filter(item_type=instrument)
+    if rating:
+        reeds = reeds.filter(item_rating=rating)
+    if sort:
+        reeds = reeds.order_by(sort)
+    else:
+        reeds = reeds.order_by('-created_on')  # default sort
+
+    return render(request, "reeds/reed_list.html", {
+        "reeds": reeds,
+        "Instrument": Instrument,
+        "Rating": Rating,
+    })
 
 # READ: Detail
 def reed_detail(request, pk):

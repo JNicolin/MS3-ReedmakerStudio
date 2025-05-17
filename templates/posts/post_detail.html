@@ -1,5 +1,15 @@
-<h1>{{ post.title }}</h1>
-<p>{{ post.content }}</p>
-<a href="{% url 'post_update' post.pk %}">Edit</a> |
-<a href="{% url 'post_delete' post.pk %}">Delete</a> |
-<a href="{% url 'post_list' %}">Back</a>
+{% extends 'base.html' %}
+{% block title %}Detailed view of a selected blog post{% endblock %}
+{% block content %}
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="card-title">{{ post.title }}</h2>
+    <p class="card-text">{{ post.body }}</p>
+    <p class="text-muted">Av {{ post.author }} - {{ post.created_on|date:"Y-m-d" }}</p>
+  </div>
+</div>
+{% if user == post.author %}
+  <a href="{% url 'post_update' post.pk %}" class="btn btn-warning">Edit</a>
+  <a href="{% url 'post_delete' post.pk %}" class="btn btn-danger">Delete</a>
+{% endif %}
+{% endblock %}
