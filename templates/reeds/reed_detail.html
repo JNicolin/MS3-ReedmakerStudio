@@ -1,18 +1,48 @@
-<h2>{{ reed.item_id }}</h2>
-<p>{{ reed.item_comment }}</p>
+{% extends 'base.html' %}
+{% block title %}Details about a selected Reed{% endblock %}
+{% load crispy_forms_tags %}
 
-<a href="{% url 'reed_update' reed.pk %}">Edit</a>
-<a href="{% url 'reed_delete' reed.pk %}">Delete</a>
+{% block content %}
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="card-title">{{ reed.item_id }}</h2>
+    <p><strong>Instrument:</strong> {{ reed.get_item_type_display }}</p>
+    <p><strong>Rating:</strong> {{ reed.get_item_rating_display }}</p>
+    <p><strong>Comment:</strong> {{ reed.item_comment }}</p>
+    <hr>
+    <p><strong>Resistance:</strong> {{ reed.get_descr_resistance_display }}</p>
+    <p><strong>Sound quality:</strong> {{ reed.get_descr_sound_display }}</p>
+    <p><strong>Response:</strong> {{ reed.get_descr_response_display }}</p>
+    <p><strong>Overall length:</strong> {{ reed.descr_length }} mm</p>
+    <hr>
+    {% if reed.item_type in "ob da ca bo hp" %}
+    <hr>
+    <p><strong>Staple model:</strong> {{ reed.staple_model }}</p>
+    <p><strong>Staple length:</strong> {{ reed.staple_length }} mm</p>
+    <p><strong>Staple material:</strong> {{ reed.staple_material }}</p>
+    {% endif %}
+    <p><strong>The cane:</strong> Supplier: {{ reed.cane_supplier }}. Shaper form: {{ reed.cane_shaper_form }}. Gauge thicknes: {{ reed.cane_gauge_thickness }} mm</p>
+    <hr>
+    <p class="text-muted">When it was finished: {{ reed.created_on|date:"Y-m-d" }} </p>
+  </div>
+</div>
 
-<h3>Comments</h3>
+{% if user == reed.item_creator %}
+  <a href="{% url 'reed_update' reed.pk %}" class="btn btn-warning">Edit</a>
+  <a href="{% url 'reed_delete' reed.pk %}" class="btn btn-danger">Delete</a>
+{% endif %}
+
+<hr>
+<h4>Comments</h4>
 {% for comment in comments %}
-  <p><strong>{{ comment.author }}</strong>: {{ comment.body }}</p>
-{% empty %}
-  <p>No comments yet.</p>
+  <div class="mb-2">
+    <strong>{{ comment.author }}</strong>: {{ comment.body }}, {{ comment.created_on }}
+  </div>
 {% endfor %}
 
 <form method="post">
   {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Add comment</button>
+  {{ form|crispy }}
+  <button type="submit" class="btn btn-primary mt-2">Post a comment</button>
 </form>
+{% endblock %}
