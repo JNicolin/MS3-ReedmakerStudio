@@ -1,77 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
+/* Light theme */
 :root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Roboto', sans-serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
 
-    --light-bg: #e3e7d3ff;
-    --light-bg: #e66666;
-    --light-highlight: #bdc2bfff;
-    --light-text: #25291cff;
-    --light-accent: #e6e49fff;
+  --bg: #e3e7d3;
+  --highlight: #bdc2bf;
+  --text: #25291c;
+  --accent: #e6e49f;
 
-    --dark-bg: #25291cff;
-    --dark-highlight: #989c94ff;
-    --dark-text: #e3e7d3ff;
-    --dark-accent: #bdc2bfff;
+  --card-bg: #bdc2bf;
+  --btn-bg: #e6e49f;
+  --btn-hover: #bdc2bf;
+}
+
+/* Dark theme overrides */
+.dark-mode {
+  --bg: #25291c;
+  --highlight: #989c94;
+  --text: #e3e7d3;
+  --accent: #bdc2bf;
+
+  --card-bg: #989c94;
+  --btn-bg: #bdc2bf;
+  --btn-hover: #989c94;
 }
 
 body {
-    font-family: var(--font-secondary);
-    background-color: var(--light-bg);
-    color: var(--light-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-secondary);
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4 {
-    font-family: var(--font-primary);
+  font-family: var(--font-primary);
 }
 
 a {
-    color: var(--light-text);
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
-}
-
-.dark-mode {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-}
-
-.dark-mode a {
-    color: var(--dark-text);
+  text-decoration: underline;
 }
 
 .card {
-    border: none;
-    background-color: var(--light-highlight);
-}
-.dark-mode .card {
-    background-color: var(--dark-highlight);
+  background-color: var(--card-bg);
+  border: none;
 }
 
 .btn-primary {
-    background-color: var(--light-accent);
-    border-color: var(--light-accent);
-    color: var(--light-text);
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--text);
 }
 .btn-primary:hover {
-    background-color: var(--light-highlight);
-    border-color: var(--light-highlight);
-}
-
-.dark-mode .btn-primary {
-    background-color: var(--dark-accent);
-    border-color: var(--dark-accent);
-    color: var(--dark-text);
-}
-.dark-mode .btn-primary:hover {
-    background-color: var(--dark-highlight);
-    border-color: var(--dark-highlight);
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
+  color: var(--text);
 }
 
 .navbar {
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }

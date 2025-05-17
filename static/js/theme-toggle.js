@@ -1,7 +1,9 @@
+console.log("Theme toggle JS loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("themeToggle");
     const body = document.body;
-  
+
     function setTheme(dark) {
       if (dark) {
         body.classList.add("dark-mode");
