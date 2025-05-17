@@ -36,6 +36,8 @@ def reed_list(request):
 def reed_detail(request, pk):
     reed = get_object_or_404(Reed, pk=pk)
     comments = reed.comments.all()
+    events = reed.targeted_gigs.all()
+    repertoire = reed.repertoire_list.all()
 
     if request.method == "POST":
         form = CommentForm(request.POST)
@@ -51,7 +53,9 @@ def reed_detail(request, pk):
     return render(request, 'reeds/reed_detail.html', {
         'reed': reed,
         'comments': comments,
-        'form': form
+        'form': form,
+        'events': events,
+        'repertoire': repertoire,
     })
 
 # CREATE
