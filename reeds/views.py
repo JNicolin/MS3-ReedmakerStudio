@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Reed
 from .forms import ReedForm
 from comments.forms import CommentForm
@@ -61,4 +61,7 @@ def reed_delete(request, pk):
     if request.method == 'POST':
         reed.delete()
         return redirect('reed_list')
-    return render(request, 'reeds/reed_confirm_delete.html', {'reed': reed})
+    return render(request, 'components/confirm_delete.html', {
+        'object_name': reed.item_id,
+        'cancel_url': reverse('reed_detail', args=[pk])
+    })

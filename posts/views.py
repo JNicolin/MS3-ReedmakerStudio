@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
 from .models import Post
 from .forms import PostForm
@@ -40,4 +40,7 @@ def post_delete(request, pk):
     if request.method == 'POST':
         post.delete()
         return redirect('post_list')
-    return render(request, 'posts/post_confirm_delete.html', {'post': post})
+    return render(request, 'components/confirm_delete.html', {
+        'object_name': post.slug,
+        'cancel_url': reverse('post_detail', args=[pk])
+    })
