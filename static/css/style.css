@@ -5,10 +5,10 @@
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
 
-  --bg: #e3e7d3;
+  --bg: #fffffe;
   --highlight: #bdc2bf;
   --text: #25291c;
-  --accent: #e6e49f;
+  --accent: rgb(228, 228, 13);
 
   --card-bg: #bdc2bf;
   --btn-bg: #e6e49f;

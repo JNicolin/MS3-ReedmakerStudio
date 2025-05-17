@@ -1,27 +1,66 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">Reedmakers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="{% url 'reed_list' %}">Reeds</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'post_list' %}">Posts</a></li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          {% comment %} {% if user.is_authenticated %}
-            <li class="nav-item"><span class="navbar-text me-2">Hi{{ user.username }}</span></li>
-            <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logga ut</a></li>
-          {% else %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Logga in</a></li>
-          {% endif %} {% endcomment %}
           <li class="nav-item">
-            <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3">🌙</button>
+            <a class="nav-link" href="{% url 'reed_list' %}">Reeds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'post_list' %}">Posts</a>
+          </li>
+        </ul>
+  
+        <ul class="navbar-nav ms-auto">
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <span class="navbar-text me-3">Welcome, {{ user.username }}</span>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                Log out
+              </button>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_login' %}">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+            </li>
+          {% endif %}
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2">🌙</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
+  <!-- Logout Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to log out?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Log out</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
