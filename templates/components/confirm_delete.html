@@ -2,7 +2,7 @@
 {% block title %}Confirm delete{% endblock %}
 {% block content %}
 <h2 class="mb-3">Confirm delete</h2>
-<p>Do you wish to delete <strong>{{ object_name }}</strong>?</p>
+<p>Do you wish to delet <strong>{{ object_name }}</strong>?</p>
 <form method="post">
   {% csrf_token %}
   <button type="submit" class="btn btn-danger">Yes, delete</button>
