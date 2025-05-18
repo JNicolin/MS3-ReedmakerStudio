@@ -3,8 +3,6 @@ from decouple import config
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-LOGIN_REDIRECT_URL = 'home' 
-LOGOUT_REDIRECT_URL = 'home'
 
 # Configs
 SECRET_KEY = config("SECRET_KEY")
@@ -44,6 +42,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'reedproject.urls'
 WSGI_APPLICATION = 'reedproject.wsgi.application'
 
+# Django Allauth
+LOGIN_REDIRECT_URL = 'home' 
+LOGOUT_REDIRECT_URL = 'home'
+ACCOUNT_SIGNUP_REDIRECT_URL = 'home'
+SITE_ID = 1
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -73,7 +77,7 @@ TIME_ZONE = 'Europe/Stockholm'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript, Images etc)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -84,6 +88,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Crispy forms declarations
 CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap5"]
 CRISPY_TEMPLATE_PACK = "bootstrap5"
-
-# Django Allauth
-SITE_ID = 1

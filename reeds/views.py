@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Reed
 from .choices import Rating, Instrument
@@ -24,7 +25,7 @@ def reed_list(request):
     if sort:
         reeds = reeds.order_by(sort)
     else:
-        reeds = reeds.order_by('-created_on')  # default sort
+        reeds = reeds.order_by('-created_on')
 
     return render(request, "reeds/reed_list.html", {
         "reeds": reeds,
@@ -40,13 +41,16 @@ def reed_detail(request, pk):
     repertoire = reed.repertoire_list.all()
 
     if request.method == "POST":
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.author = request.user
-            comment.content_object = reed
-            comment.save()
-            return redirect('reed_detail', pk=pk)
+        if request.user.is_authenticated:
+            form = CommentForm(request.POST)
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.author = request.user
+                comment.content_object = reed
+                comment.save()
+                return redirect('reed_detail', pk=pk)
+        else:
+            return redirect('account_login')
     else:
         form = CommentForm()
 
@@ -59,6 +63,7 @@ def reed_detail(request, pk):
     })
 
 # CREATE
+@login_required
 def reed_create(request):
     form = ReedForm(request.POST or None)
     if form.is_valid():
@@ -69,8 +74,12 @@ def reed_create(request):
     return render(request, 'reeds/reed_form.html', {'form': form})
 
 # UPDATE
+@login_required
 def reed_update(request, pk):
     reed = get_object_or_404(Reed, pk=pk)
+    if request.user != reed.item_creator:
+        return redirect('reed_detail', pk=pk)
+
     form = ReedForm(request.POST or None, instance=reed)
     if form.is_valid():
         form.save()
@@ -78,11 +87,19 @@ def reed_update(request, pk):
     return render(request, 'reeds/reed_form.html', {'form': form})
 
 # DELETE
+@login_required
 def reed_delete(request, pk):
     reed = get_object_or_404(Reed, pk=pk)
+    # check if logged in user is the owner
+    if request.user != reed.item_creator:
+        return redirect('reed_detail', pk=pk)
+
+    # if POST request 
     if request.method == 'POST':
         reed.delete()
         return redirect('reed_list')
+
+    # if GET request (delete not yet confirmed)
     return render(request, 'components/confirm_delete.html', {
         'object_name': reed.item_id,
         'cancel_url': reverse('reed_detail', args=[pk])
