@@ -1,11 +1,67 @@
-/* Global fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
-/* Colorscheme */
+/* Light theme */
 :root {
-    --lightBackground: #e3e7d3ff; /* beige */
-    --darkBackground: #989c94ff; /*battleship-grey*/
-    --lightHighlight: #bdc2bfff; /* silver */
-    --darkHighlight: #25291cff; /*black-olive */
-    --lightSignal: #e6e49fff; /* vanilla */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --bg: #fffffe;
+  --highlight: #bdc2bf;
+  --text: #25291c;
+  --accent: rgb(228, 228, 13);
+
+  --card-bg: #bdc2bf;
+  --btn-bg: #e6e49f;
+  --btn-hover: #bdc2bf;
+}
+
+/* Dark theme overrides */
+.dark-mode {
+  --bg: #25291c;
+  --highlight: #989c94;
+  --text: #e3e7d3;
+  --accent: #bdc2bf;
+
+  --card-bg: #989c94;
+  --btn-bg: #bdc2bf;
+  --btn-hover: #989c94;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-primary);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--text);
+}
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
+  color: var(--text);
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
 }
