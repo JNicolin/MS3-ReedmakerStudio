@@ -14,16 +14,20 @@ def home(request):
 # READ: List
 def reed_list(request):
     reeds = Reed.objects.all()
-    instrument = request.GET.get("instrument")
-    rating = request.GET.get("rating")
-    sort = request.GET.get("sort")
+    selected_instrument = request.GET.get("instrument")
+    selected_rating = request.GET.get("rating")
+    selected_sort = request.GET.get("sort")
+    only_mine = request.GET.get("mine") == "1"
 
-    if instrument:
-        reeds = reeds.filter(item_type=instrument)
-    if rating:
-        reeds = reeds.filter(item_rating=rating)
-    if sort:
-        reeds = reeds.order_by(sort)
+    if only_mine and request.user.is_authenticated:
+        reeds = reeds.filter(item_creator=request.user)
+
+    if selected_instrument:
+        reeds = reeds.filter(item_type=selected_instrument)
+    if selected_rating:
+        reeds = reeds.filter(item_rating=selected_rating)
+    if selected_sort:
+        reeds = reeds.order_by(selected_sort)
     else:
         reeds = reeds.order_by('-created_on')
 
@@ -31,6 +35,10 @@ def reed_list(request):
         "reeds": reeds,
         "Instrument": Instrument,
         "Rating": Rating,
+        "selected_instrument": selected_instrument,
+        "selected_rating": selected_rating,
+        "selected_sort": selected_sort,
+        "only_mine": only_mine,
     })
 
 # READ: Detail

@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<!-- Reed details -->
+<!-- Display Reed details -->
 <div class="card mb-4">
   <div class="card-body">
     <h2 class="card-title">{{ reed.item_id }}</h2>
@@ -27,12 +27,13 @@
   </div>
 </div>
 
+<!-- Option to edit or delete a Reed, if the user is the owner -->
 {% if user == reed.item_creator %}
   <a href="{% url 'reed_update' reed.pk %}" class="btn btn-warning">Edit</a>
   <a href="{% url 'reed_delete' reed.pk %}" class="btn btn-danger">Delete</a>
 {% endif %}
 
-<!-- Associated events/gigs -->
+<!-- List associated events/gigs where this reed was used -->
 <div class="d-flex justify-content-between align-items-center mt-5 mb-2">
   <h4>Events</h4>
   <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#eventModal">➕ Add Event</button>
@@ -47,7 +48,7 @@
   {% endfor %}
 </ul>
 
-<!-- Assocaiated repertoire -->
+<!-- List associated repertoire, music that was played using this Reed -->
 <div class="d-flex justify-content-between align-items-center mt-5 mb-2">
   <h4>Repertoire</h4>
   <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#repertoireModal">➕ Add Repertoire</button>
@@ -62,7 +63,7 @@
   {% endfor %}
 </ul>
 
-<!-- Comments -->
+<!-- List comments posted to a Reed -->
 <hr>
 <h4>Comments</h4>
 {% for comment in comments %}
@@ -73,6 +74,7 @@
   <p class="text-muted">No comments yet.</p>
 {% endfor %}
 
+<!-- Form to post a comment to a Reed -->
 <form method="post">
   {% csrf_token %}
   <input type="hidden" name="submit_comment" value="1">
@@ -80,7 +82,7 @@
   <button type="submit" class="btn btn-primary mt-2">Post a comment</button>
 </form>
 
-<!-- Event modal -->
+<!-- Modal for adding of an Event/Gig where this reed was used -->
 <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <form method="post">
@@ -102,8 +104,8 @@
   </div>
 </div>
 
-<!-- Repertoire modal -->
-<div class="modal fade" id="repertoireModal" tabindex="-1" aria-labelledby="repertoireModalLabel" aria-hidden="true">
+<!-- Modal for adding of music that was played using this reed -->
+ <div class="modal fade" id="repertoireModal" tabindex="-1" aria-labelledby="repertoireModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <form method="post">
       {% csrf_token %}
