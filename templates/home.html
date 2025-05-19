@@ -1,9 +1,69 @@
 {% extends 'base.html' %}
 {% block title %}Welcome{% endblock %}
 {% block content %}
-<div class="text-center mt-5">
-  <h1>Welcome to Reedmaker Studio!</h1>
-  <p class="lead">This is a platform for learning, sharing and discussing reedmaking. This is a platform for all of us who loves to discuss reeds in every aspect. If you are addicted to news and stories about reedmaking, you have come to the right place!</p>
-  <a href="{% url 'reed_list' %}" class="btn btn-primary mt-3">See all reeds</a>
-</div>
+{% load static %}
+
+<header id="header" class="container section">
+    <div class="row align-items-start mb-5">
+        <div class="col-12 col-xl-6 text-center text-lg-start">
+            <h1 class="display-4">Reedmaker's studio</h1>
+            <p class="lead display-8"><strong>For you who knows that reedmaking is an art!</strong></p>
+            <p> 
+                Use this application to post a digital record of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to help you learn from past experiences and to identify reed preferences. Use this application to post articles about the reedmaking process and comments about other musicians reeds and articles. </em>
+            </p>
+        </div>
+        <div class="col-12 col-xl-6">
+            <img src="{% static 'images/reedcase_1280.jpg' %}"
+            alt="Image illustrating a reed"
+            class="img-fluid w-100 object-fit-cover"
+            style="max-height: 300px;"> 
+        </div>
+    </div>
+</header>
+
+
+<!-- Services section -->
+<section id="services" class="container section mb-3">
+    <div class="row g-3 justify-content-center">
+        <div class="col-12 text-center">
+            <h2 class="display-6">What you can expect from Reedmaker Studio</h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3 class="display-7 mb-0 sub-heading-color">Build your digital reedcase</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        You can register your precious reeds with us and keep a log of your achievements. Use the service to save datga aboput your reeds. Everything from material, characteristics of playing to what events they were used at and for what repertoire. 
+                    </p>
+                    <p class="card-text">
+                        Save your data and choose to share it with fellow musicians to get feedback and tips from the community. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p class="mb-0">Your digital reedcase</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3 class="display-7 mb-0 sub-heading-color">Blog about reedmaking</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Reedmaking takes practice and inspiration to progress. Blogging about reedmaking, reading articles and posting comments is a way to fastforward into becoming a professional.
+                    </p>
+                    <p class="card-text">
+                        Share your insights and knowledge with the community, or add a post to help a collegue out. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p class="mb-0">Your dedicated reedmakers blog</p>
+                </div>
+            </div>
+        </div>            
+    </div>
+</section>
 {% endblock %}
