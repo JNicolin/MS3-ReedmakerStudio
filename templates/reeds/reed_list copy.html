@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}All reeds{% endblock %}
+{% load static %}
+{% block content %}
+<h1 class="mb-4">All reeds</h1>
+
+<!-- # Selection keys and filtering -->
+<form method="get" class="row g-3 mb-4">
+  <div class="col-md-4">
+    <select name="instrument" class="form-select">
+      <option value="">All instrument types</option>
+      {% for key, label in Instrument.choices %}
+        <option value="{{ key }}" {% if request.GET.instrument == key %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-md-4">
+    <select name="rating" class="form-select">
+      <option value="">All levels</option>
+      {% for key, label in Rating.choices %}
+        <option value="{{ key }}" {% if request.GET.rating == key %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-md-4">
+    <select name="sort" class="form-select">
+      <option value="">Sorting option</option>
+      <option value="created_on" {% if request.GET.sort == "created_on" %}selected{% endif %}>Created (newest first)</option>
+      <option value="item_rating" {% if request.GET.sort == "item_rating" %}selected{% endif %}>Rating (lowest first)</option>
+      <option value="-item_rating" {% if request.GET.sort == "-item_rating" %}selected{% endif %}>Rating (highest first)</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-2">
+    <input class="form-check-input" type="checkbox" id="mine" name="mine" value="1"
+           {% if request.GET.mine == "1" %}checked{% endif %} onchange="this.form.submit()">
+    <label class="form-check-label" for="mine">My reeds only</label>
+  </div>
+  <div class="col-12 d-grid d-md-inline mt-2">
+    <a href="{% url 'reed_list' %}" class="btn btn-primary">Clear filter</a>
+  </div>
+</form>
+
+<!-- # List of reeds with selected metadata -->
+<div class="col-12">
+  <a href="{% url 'reed_create' %}" class="btn btn-success mb-3">Add a new reed</a>
+  <ul class="list-group">
+    {% for reed in reeds %}
+      <li class="list-group-item">
+        <a href="{% url 'reed_detail' reed.pk %}">{{ reed.item_id }}</a>
+        — {{ reed.get_item_type_display }} | {{ reed.get_item_rating_display }} | {{ reed.item_creator }}
+      </li>
+    {% empty %}
+      <li class="list-group-item">There are no reeds that match this selection.</li>
+    {% endfor %}
+  </ul>
+<div>
+{% endblock %}

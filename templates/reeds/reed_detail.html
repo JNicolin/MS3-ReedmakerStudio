@@ -57,12 +57,12 @@
           </ul>
           <ul class="mb-0">
             <li>Staple model: {{ reed.staple_model }}</li>
-            <li>Staple length: {{ reed.staple_length }}</li>
-            <li>Staple material: {{ reed.staple_material }} mm</li>
+            <li>Staple length: {{ reed.staple_length }} mm</li>
+            <li>Staple material: {{ reed.staple_material }}</li>
           </ul>
         </div>
         <div class="card-footer">
-          <p class="mb-0">Price: 50 USD/person/day</p>
+          <p class="mb-0">All measures in mm</p>
         </div>
       </div>
     </div>
@@ -77,11 +77,11 @@
             <li>Resistance: {{ reed.get_descr_resistance_display }}</li>
             <li>Response: {{ reed.get_descr_response_display }}</li>
             <li>Sound: {{ reed.get_descr_sound_display }}</li>
-            <li>Overall length: {{ reed.descr_length }}</li>
+            <li>Overall length: {{ reed.descr_length }} mm</li>
           </ul>
         </div>
         <div class="card-footer">
-          <p class="mb-0">Last updated: {{ reed.updated_on|date:"Y-m-d" }}</p>
+          <p class="mb-0">All measures in mm</p>
         </div>
       </div>
     </div>
