@@ -7,8 +7,10 @@ from comments.forms import CommentForm
 # READ: List
 def post_list(request):
     posts = Post.objects.filter(status=1).order_by('-created_on')
+    form = PostForm() if request.user.is_authenticated else None
     return render(request, "posts/post_list.html", {
-        "posts": posts
+        "posts": posts,
+        "form": form
     })
 
 # READ: Detail with comments
