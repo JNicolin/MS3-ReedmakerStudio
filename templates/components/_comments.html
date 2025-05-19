@@ -1,0 +1,16 @@
+<!-- Comments -->
+<div class="row mt-2 mb-4">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+      <h4 class="mb-0">Comments</h4>
+      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#commentModal">➕ Add Comment</button>
+    </div>
+  </div>
+  <ul class="list-group mb-4">
+    {% for comment in comments %}
+      <li class="list-group-item">
+        <strong>{{ comment.author }}</strong>: {{ comment.body }} <span class="text-muted">({{ comment.created_on|date:"Y-m-d H:i" }})</span>
+      </li>
+    {% empty %}
+      <li class="list-group-item text-muted">No comments yet.</li>
+    {% endfor %}
+  </ul>

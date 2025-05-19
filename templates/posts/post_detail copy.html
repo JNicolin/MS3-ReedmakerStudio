@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Detailed view of a selected blog post{% endblock %}
+{% block content %}
+
+<!-- Display a Post in detail -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="card-title">{{ post.title }}</h2>
+    <p class="card-text">{{ post.body }}</p>
+    <p class="text-muted">By {{ post.author }} | Created {{ post.created_on|date:"Y-m-d" }} | Updated {{ post.updated_on|date:"Y-m-d" }}</p>
+  </div>
+</div>
+
+<!-- Option to Edit or Delete a Post, if the user is the owner -->
+{% if user == post.author %}
+  <a href="{% url 'post_update' post.pk %}" class="btn btn-warning">Edit</a>
+  <a href="{% url 'post_delete' post.pk %}" class="btn btn-danger">Delete</a>
+{% endif %}
+{% endblock %}
+
+
+

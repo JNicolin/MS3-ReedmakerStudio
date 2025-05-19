@@ -16,16 +16,19 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = post.comments.all()
 
+    form = CommentForm()
+
     if request.method == "POST":
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.author = request.user
-            comment.content_object = post
-            comment.save()
-            return redirect('post_detail', pk=pk)
-    else:
-        form = CommentForm()
+        if request.user.is_authenticated and request.POST.get("submit_comment"):
+            form = CommentForm(request.POST)
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.author = request.user
+                comment.content_object = post
+                comment.save()
+                return redirect('post_detail', pk=pk)
+        else:
+            return redirect('account_login')
 
     return render(request, 'posts/post_detail.html', {
         'post': post,
