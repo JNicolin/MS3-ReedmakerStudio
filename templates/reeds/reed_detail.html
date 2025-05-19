@@ -1,88 +1,161 @@
 {% extends 'base.html' %}
 {% block title %}Details about a selected Reed{% endblock %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block content %}
-<!-- Display Reed details -->
-<div class="card mb-4">
-  <div class="card-body">
-    <h2 class="card-title">{{ reed.item_id }}</h2>
-    <p><strong>Instrument:</strong> {{ reed.get_item_type_display }}</p>
-    <p><strong>Rating:</strong> {{ reed.get_item_rating_display }}</p>
-    <p><strong>Comment:</strong> {{ reed.item_comment }}</p>
-    <hr>
-    <p><strong>Resistance:</strong> {{ reed.get_descr_resistance_display }}</p>
-    <p><strong>Sound quality:</strong> {{ reed.get_descr_sound_display }}</p>
-    <p><strong>Response:</strong> {{ reed.get_descr_response_display }}</p>
-    <p><strong>Overall length:</strong> {{ reed.descr_length }} mm</p>
-    {% if reed.item_type in "ob da ca bo hp" %}
-    <hr>
-    <p><strong>Staple model:</strong> {{ reed.staple_model }}</p>
-    <p><strong>Staple length:</strong> {{ reed.staple_length }} mm</p>
-    <p><strong>Staple material:</strong> {{ reed.staple_material }}</p>
-    {% endif %}
-    <p><strong>The cane:</strong> Supplier: {{ reed.cane_supplier }}. Shaper form: {{ reed.cane_shaper_form }}. Gauge thickness: {{ reed.cane_gauge_thickness }} mm</p>
-    <hr>
-    <p class="text-muted">Created on: {{ reed.created_on|date:"Y-m-d" }}</p>
+<section class="container section">
+
+  <!-- Reed title -->
+  <div class="row mb-4">
+    <div class="col-12 text-center">
+      <h2 class="display-6">Details about reed {{ reed.item_id }}</h2>
+    </div>
   </div>
-</div>
 
-<!-- Buttons to Edit or Delete a Reed, if the user is the owner -->
-{% if user == reed.item_creator %}
-  <a href="{% url 'reed_update' reed.pk %}" class="btn btn-primary">Edit</a>
-  <a href="{% url 'reed_delete' reed.pk %}" class="btn btn-danger">Delete</a>
-{% endif %}
+  <!-- Photo + Comment side by side -->
+  <div class="row align-items-start mb-5">
+    <div class="col-12 col-md-6">
+      <img src="{% static 'images/reedcase_1280.jpg' %}"
+           alt="Image illustrating a reed"
+           class="img-fluid w-100 object-fit-cover"
+           style="max-height: 300px;">
+    </div>
+    <div class="col-12 col-md-6">
+      <h4><strong>Comment</strong></h4>
+      <p>{{ reed.item_comment }}</p>
+      <h4><strong>Instrument</strong></h4>
+      <p>{{ reed.get_item_type_display }}</p>
+      <h4><strong>Rating</strong></h4>
+      <p>{{ reed.get_item_rating_display }}</p>
+      <h4><strong>Making</strong></h4>
+      <p>Created at {{ reed.created_on|date:"Y-m-d" }}, by {{ reed.item_creator }} </p>
+    </div>
+    <div class="col-12">
+      <!-- Buttons to Edit or Delete a Reed, if the user is the owner -->
+      {% if user == reed.item_creator %}
+      <a href="{% url 'reed_update' reed.pk %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'reed_delete' reed.pk %}" class="btn btn-danger">Delete</a>
+      {% endif %}
+    </div>  
+  </div>
 
-<!-- Events/gigs associated with this reed -->
- <!-- Button to open modal to add event -->
-<div class="d-flex justify-content-between align-items-center mt-5 mb-2">
-  <h4>Events</h4>
-  <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#eventModal">➕ Add Event</button>
-</div>
-  <!-- List associated events -->
-<ul class="list-group mb-4">
-  {% for event in events %}
-    <li class="list-group-item">
-      <strong>{{ event.gig_title }}</strong> – {{ event.gig_date }} ({{ event.gig_location }})
-    </li>
-  {% empty %}
-    <li class="list-group-item text-muted">No events linked to this reed.</li>
-  {% endfor %}
-</ul>
 
-<!-- Repertoire associated with this Reed -->
-  <!-- Button to open modal to add new repertoire -->
-<div class="d-flex justify-content-between align-items-center mt-5 mb-2">
-  <h4>Repertoire</h4>
-  <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#repertoireModal">➕ Add Repertoire</button>
-</div>
-  <!-- List associated repertoire -->
-<ul class="list-group mb-4">
-  {% for piece in repertoire %}
-    <li class="list-group-item">
-      <strong>{{ piece.music_title }}</strong> – {{ piece.music_composer }} ({{ piece.music_genre }})
-    </li>
-  {% empty %}
-    <li class="list-group-item text-muted">No repertoire linked to this reed.</li>
-  {% endfor %}
-</ul>
-
-<!-- Comments associated with this  Reed -->
- <!-- Button to open comment modal -->
-<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
-  <h4>Comments</h4>
-  <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#commentModal">➕ Add Comment</button>
-</div>
-  <!-- List associated comments -->
-<ul class="list-group mb-4">
-  {% for comment in comments %}
-    <li class="list-group-item">
-      <strong>{{ comment.author }}</strong>: {{ comment.body }}, {{ comment.created_on|date:"Y-m-d H:i" }}
-    </li>
-  {% empty %}
-    <li class="text-muted">No comments yet.</li>
-  {% endfor %}
-</ul>
+  <!-- Cards with categories of information -->
+    <!-- Material -->
+  <div class="row g-4">
+    <div class="col-12 col-lg-6">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="display-6 mb-0 sub-heading-color">Material</h3>
+        </div>
+        <div class="card-body">
+          <ul class="mb-0">
+            <li>Supplier: {{ reed.cane_supplier }}</li>
+            <li>Shaper form: {{ reed.cane_shaper_form }}</li>
+            <li>Gauge thickness: {{ reed.cane_gauge_thickness }} mm</li>
+          </ul>
+          <ul class="mb-0">
+            <li>Staple model: {{ reed.staple_model }}</li>
+            <li>Staple length: {{ reed.staple_length }}</li>
+            <li>Staple material: {{ reed.staple_material }} mm</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p class="mb-0">Price: 50 USD/person/day</p>
+        </div>
+      </div>
+    </div>
+    <!-- Sound quality and characteristics -->
+    <div class="col-12 col-lg-6">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="display-6 mb-0 sub-heading-color">Characteristics</h3>
+        </div>
+        <div class="card-body">
+          <ul class="mb-0">
+            <li>Resistance: {{ reed.get_descr_resistance_display }}</li>
+            <li>Response: {{ reed.get_descr_response_display }}</li>
+            <li>Sound: {{ reed.get_descr_sound_display }}</li>
+            <li>Overall length: {{ reed.descr_length }}</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p class="mb-0">Last updated: {{ reed.updated_on|date:"Y-m-d" }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Repertoire -->
+    <div class="col-12 col-lg-6">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="display-6 mb-0 sub-heading-color">Repertoire</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group mb-4">
+            {% for piece in repertoire %}
+              <li class="list-group-item">
+                <strong>{{ piece.music_title }}</strong> – {{ piece.music_composer }} ({{ piece.music_genre }})
+              </li>
+            {% empty %}
+              <li class="list-group-item text-muted">No repertoire linked to this reed.</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="card-footer">
+          <!-- Button to open modal -->
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#repertoireModal">➕ Add Repertoire</button>
+        </div>
+      </div>
+    </div>
+    <!-- Gigs -->
+    <div class="col-12 col-lg-6">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="display-6 mb-0 sub-heading-color">Performances</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group mb-4">
+            {% for event in events %}
+              <li class="list-group-item">
+                <strong>{{ event.gig_title }}</strong> – {{ event.gig_date }} ({{ event.gig_location }})
+              </li>
+            {% empty %}
+              <li class="list-group-item text-muted">No events linked to this reed.</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="card-footer">
+          <!-- Button to open modal -->
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#eventModal">➕ Add Event</button>
+        </div>
+      </div>
+    </div>
+    <!-- Comments -->
+    <div class="col-12">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="display-6 mb-0 sub-heading-color">Comments</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group mb-4">
+            {% for comment in comments %}
+              <li class="list-group-item">
+                <strong>{{ comment.author }}</strong>: {{ comment.body }}, {{ comment.created_on|date:"Y-m-d H:i" }}
+              </li>
+            {% empty %}
+              <li class="text-muted">No comments yet.</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="card-footer">
+          <!-- Button to open modal -->
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#commentModal">➕ Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Modal for adding an Event -->
 <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">

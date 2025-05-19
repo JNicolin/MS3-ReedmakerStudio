@@ -8,11 +8,11 @@
 
   --color-primary: white;
   --color-secondary:#25291c;
-  --color-tertiary: #15b01c;
+  --color-tertiary: #bdc0d1;
   --color-text: #25291c;
-  --color-accent: rgb(228, 228, 13);
+  --color-accent: rgb(231, 231, 181);
 
-  --card-bg: #bdc2bf;
+  --card-bg: #f0f3b2;
   --btn-bg: #e6e49f;
   --btn-hover: #bdc2bf;
 }
@@ -25,7 +25,7 @@
   --color-text: #e3e7d3;
   --color-accent: #1f15e0;
 
-  --card-bg: #989c94;
+  --card-bg: #eef5b1;
   --btn-bg: #bdc2bf;
   --btn-hover: #989c94;
 }
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--color-tertiary);
   border: none;
 }
 

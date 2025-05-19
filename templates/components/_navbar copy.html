@@ -6,8 +6,9 @@
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
           </li>
@@ -15,9 +16,15 @@
             <a class="nav-link" href="{% url 'reed_list' %}">Reeds</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
+            <a class="nav-link" href="{% url 'post_list' %}">Posts</a>
           </li>
+        </ul>
+  
+        <ul class="navbar-nav ms-auto">
           {% if user.is_authenticated %}
+            <li class="nav-item">
+              <span class="navbar-text me-3">Welcome, {{ user.username }}</span>
+            </li>
             <li class="nav-item">
               <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#logoutModal">
                 Log out
