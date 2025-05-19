@@ -3,8 +3,7 @@
 {% block content %}
 
 <!-- List all logged Posts with selected metadata -->
-<h1 class="mb-4">All posts</h1>
-<a href="{% url 'post_create' %}" class="btn btn-primary mb-3">New post</a>
+<h1 class="mb-4">Reedmaker blog posts</h1>
 <ul class="list-group">
   {% for post in posts %}
     <li class="list-group-item">
@@ -12,4 +11,5 @@
     </li>
   {% endfor %}
 </ul>
+<a href="{% url 'post_create' %}" class="btn btn-primary mb-3">Add a new post</a>
 {% endblock %}

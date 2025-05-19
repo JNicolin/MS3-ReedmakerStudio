@@ -27,17 +27,19 @@
   </div>
 </div>
 
-<!-- Option to edit or delete a Reed, if the user is the owner -->
+<!-- Buttons to Edit or Delete a Reed, if the user is the owner -->
 {% if user == reed.item_creator %}
-  <a href="{% url 'reed_update' reed.pk %}" class="btn btn-warning">Edit</a>
+  <a href="{% url 'reed_update' reed.pk %}" class="btn btn-primary">Edit</a>
   <a href="{% url 'reed_delete' reed.pk %}" class="btn btn-danger">Delete</a>
 {% endif %}
 
-<!-- List associated events/gigs where this reed was used -->
+<!-- Events/gigs associated with this reed -->
+ <!-- Button to open modal to add event -->
 <div class="d-flex justify-content-between align-items-center mt-5 mb-2">
   <h4>Events</h4>
   <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#eventModal">➕ Add Event</button>
 </div>
+  <!-- List associated events -->
 <ul class="list-group mb-4">
   {% for event in events %}
     <li class="list-group-item">
@@ -48,11 +50,13 @@
   {% endfor %}
 </ul>
 
-<!-- List associated repertoire, music that was played using this Reed -->
+<!-- Repertoire associated with this Reed -->
+  <!-- Button to open modal to add new repertoire -->
 <div class="d-flex justify-content-between align-items-center mt-5 mb-2">
   <h4>Repertoire</h4>
   <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#repertoireModal">➕ Add Repertoire</button>
 </div>
+  <!-- List associated repertoire -->
 <ul class="list-group mb-4">
   {% for piece in repertoire %}
     <li class="list-group-item">
@@ -63,26 +67,24 @@
   {% endfor %}
 </ul>
 
-<!-- List comments posted to a Reed -->
-<hr>
-<h4>Comments</h4>
-{% for comment in comments %}
-  <div class="mb-2">
-    <strong>{{ comment.author }}</strong>: {{ comment.body }}, {{ comment.created_on|date:"Y-m-d H:i" }}
-  </div>
-{% empty %}
-  <p class="text-muted">No comments yet.</p>
-{% endfor %}
+<!-- Comments associated with this  Reed -->
+ <!-- Button to open comment modal -->
+<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+  <h4>Comments</h4>
+  <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#commentModal">➕ Add Comment</button>
+</div>
+  <!-- List associated comments -->
+<ul class="list-group mb-4">
+  {% for comment in comments %}
+    <li class="list-group-item">
+      <strong>{{ comment.author }}</strong>: {{ comment.body }}, {{ comment.created_on|date:"Y-m-d H:i" }}
+    </li>
+  {% empty %}
+    <li class="text-muted">No comments yet.</li>
+  {% endfor %}
+</ul>
 
-<!-- Form to post a comment to a Reed -->
-<form method="post">
-  {% csrf_token %}
-  <input type="hidden" name="submit_comment" value="1">
-  {{ form|crispy }}
-  <button type="submit" class="btn btn-primary mt-2">Post a comment</button>
-</form>
-
-<!-- Modal for adding of an Event/Gig where this reed was used -->
+<!-- Modal for adding an Event -->
 <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <form method="post">
@@ -104,7 +106,7 @@
   </div>
 </div>
 
-<!-- Modal for adding of music that was played using this reed -->
+<!-- Modal for adding repertoire -->
  <div class="modal fade" id="repertoireModal" tabindex="-1" aria-labelledby="repertoireModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <form method="post">
@@ -120,6 +122,28 @@
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Save Repertoire</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal for adding a comment -->
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form method="post">
+      {% csrf_token %}
+      <input type="hidden" name="submit_comment" value="1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{ form|crispy }}
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Post Comment</button>
         </div>
       </div>
     </form>

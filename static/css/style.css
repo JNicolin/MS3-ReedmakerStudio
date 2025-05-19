@@ -1,3 +1,4 @@
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
 /* Light theme */
@@ -5,10 +6,11 @@
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
 
-  --bg: #fffffe;
-  --highlight: #bdc2bf;
-  --text: #25291c;
-  --accent: rgb(228, 228, 13);
+  --color-primary: white;
+  --color-secondary:#25291c;
+  --color-tertiary: #15b01c;
+  --color-text: #25291c;
+  --color-accent: rgb(228, 228, 13);
 
   --card-bg: #bdc2bf;
   --btn-bg: #e6e49f;
@@ -17,10 +19,11 @@
 
 /* Dark theme overrides */
 .dark-mode {
-  --bg: #25291c;
-  --highlight: #989c94;
-  --text: #e3e7d3;
-  --accent: #bdc2bf;
+  --color-primary: white;
+  --color-secondary:#25291c;
+  --color-tertiary: #bdc0d1;
+  --color-text: #e3e7d3;
+  --color-accent: #1f15e0;
 
   --card-bg: #989c94;
   --btn-bg: #bdc2bf;
@@ -29,9 +32,14 @@
 
 body {
   font-family: var(--font-secondary);
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--color-primary);
+  color: var(--color-text);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    background-color: var(--color-secondary)
+    color: var(--color-primary)
 }
 
 h1, h2, h3, h4 {
@@ -39,7 +47,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: var(--text);
+  color: var(--color-text);
   text-decoration: none;
 }
 a:hover {
@@ -54,14 +62,21 @@ a:hover {
 .btn-primary {
   background-color: var(--btn-bg);
   border-color: var(--btn-bg);
-  color: var(--text);
+  color: var(--color-text);
 }
 .btn-primary:hover {
   background-color: var(--btn-hover);
   border-color: var(--btn-hover);
-  color: var(--text);
+  color: var(--color-text);
 }
 
-.navbar {
-  transition: background-color 0.3s ease;
-}
+.btn-secondary {
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
+    color: var(--text);
+  }
+  .btn-secondary:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+    color: var(--text);
+  }

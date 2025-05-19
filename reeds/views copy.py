@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Reed
 from .choices import Rating, Instrument
-from .forms import ReedForm, EventForm, RepertoireForm
+from .forms import ReedForm
 from comments.forms import CommentForm
 
 # Route for the home view
@@ -48,45 +48,26 @@ def reed_detail(request, pk):
     events = reed.targeted_gigs.all()
     repertoire = reed.repertoire_list.all()
 
-    form = CommentForm()
-    event_form = EventForm(initial={'reed': reed})
-    repertoire_form = RepertoireForm(initial={'reed': reed})
-
-    # POST request
     if request.method == "POST":
         if request.user.is_authenticated:
-            if 'submit_comment' in request.POST:
-                form = CommentForm(request.POST)
-                if form.is_valid():
-                    comment = form.save(commit=False)
-                    comment.author = request.user
-                    comment.content_object = reed
-                    comment.save()
-                    return redirect('reed_detail', pk=pk)
-
-            elif 'submit_event' in request.POST:
-                event_form = EventForm(request.POST)
-                if event_form.is_valid():
-                    event_form.save()
-                    return redirect('reed_detail', pk=pk)
-
-            elif 'submit_repertoire' in request.POST:
-                repertoire_form = RepertoireForm(request.POST)
-                if repertoire_form.is_valid():
-                    repertoire_form.save()
-                    return redirect('reed_detail', pk=pk)
+            form = CommentForm(request.POST)
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.author = request.user
+                comment.content_object = reed
+                comment.save()
+                return redirect('reed_detail', pk=pk)
         else:
             return redirect('account_login')
+    else:
+        form = CommentForm()
 
-    # GET request
     return render(request, 'reeds/reed_detail.html', {
         'reed': reed,
         'comments': comments,
         'form': form,
         'events': events,
         'repertoire': repertoire,
-        'event_form': event_form,
-        'repertoire_form': repertoire_form,
     })
 
 # CREATE

@@ -33,23 +33,25 @@
   <div class="col-md-4 mt-2">
     <input class="form-check-input" type="checkbox" id="mine" name="mine" value="1"
            {% if request.GET.mine == "1" %}checked{% endif %} onchange="this.form.submit()">
-    <label class="form-check-label" for="mine">Only my reeds</label>
+    <label class="form-check-label" for="mine">My reeds only</label>
   </div>
   <div class="col-12 d-grid d-md-inline mt-2">
-    <a href="{% url 'reed_list' %}" class="btn btn-secondary">Clear filter</a>
+    <a href="{% url 'reed_list' %}" class="btn btn-primary">Clear filter</a>
   </div>
 </form>
 
 <!-- # List of reeds with selected metadata -->
-<a href="{% url 'reed_create' %}" class="btn btn-success mb-3">Add a new reed</a>
-<ul class="list-group">
-  {% for reed in reeds %}
-    <li class="list-group-item">
-      <a href="{% url 'reed_detail' reed.pk %}">{{ reed.item_id }}</a>
-      — {{ reed.get_item_type_display }} | {{ reed.get_item_rating_display }} | {{ reed.item_creator }}
-    </li>
-  {% empty %}
-    <li class="list-group-item">There are no reeds that match this selection.</li>
-  {% endfor %}
-</ul>
+<div class="col-12">
+  <a href="{% url 'reed_create' %}" class="btn btn-success mb-3">Add a new reed</a>
+  <ul class="list-group">
+    {% for reed in reeds %}
+      <li class="list-group-item">
+        <a href="{% url 'reed_detail' reed.pk %}">{{ reed.item_id }}</a>
+        — {{ reed.get_item_type_display }} | {{ reed.get_item_rating_display }} | {{ reed.item_creator }}
+      </li>
+    {% empty %}
+      <li class="list-group-item">There are no reeds that match this selection.</li>
+    {% endfor %}
+  </ul>
+<div>
 {% endblock %}
