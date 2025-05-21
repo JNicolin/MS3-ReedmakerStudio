@@ -1,62 +1,74 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">Reedstudio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'reed_list' %}">Reeds</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
-          </li>
-          {% if user.is_authenticated %}
-            <li class="nav-item">
-              <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                Log out
-              </button>
-            </li>
-          {% else %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_login' %}">Log in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-            </li>
-          {% endif %}
-          <li class="nav-item">
-            <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2">🌙</button>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Brand (adjusted to the left) -->
+    <a class="navbar-brand" href="{% url 'home' %}">Reedstudio</a>
+
+    <!-- Toggler (hamburgare) direkt efter brand -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right-aligned buttons (small screens only) -->
+    <div class="d-flex d-lg-none ms-2">
+      {% if user.is_authenticated %}
+        <button class="btn btn-sm btn-custom-primary me-2" data-bs-toggle="modal" data-bs-target="#logoutModal">
+          Log out
+        </button>
+      {% else %}
+        <a class="btn btn-sm btn-custom-primary me-2" href="{% url 'account_login' %}">Log in</a>
+        <a class="btn btn-sm btn-custom-primary" href="{% url 'account_signup' %}">Register</a>
+      {% endif %}
     </div>
-  </nav>
-  
-  <!-- Logout Modal -->
-  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white">
-        <div class="modal-header">
-          <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Are you sure you want to log out?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <form method="post" action="{% url 'account_logout' %}">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Log out</button>
-          </form>
-        </div>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Nav links (adjusted to the left) -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'reed_list' %}">Reeds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
+        </li>
+      </ul>
+
+      <!-- Buttons adjusted to the right -->
+      <div class="d-none d-lg-flex">
+        {% if user.is_authenticated %}
+          <button class="btn btn-sm btn-custom-primary me-2" data-bs-toggle="modal" data-bs-target="#logoutModal">
+            Log out
+          </button>
+        {% else %}
+          <a class="btn btn-sm btn-custom-primary me-2" href="{% url 'account_login' %}">Log in</a>
+          <a class="btn btn-sm btn-custom-primary" href="{% url 'account_signup' %}">Register</a>
+        {% endif %}
       </div>
     </div>
   </div>
+</nav>
+
+<!-- Logout Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to log out?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom-primary" data-bs-dismiss="modal">Cancel</button>
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-custom-secondary">Log out</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

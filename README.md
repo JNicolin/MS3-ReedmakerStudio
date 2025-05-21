@@ -1,4 +1,6 @@
-# Welcome to Reedmaker's blog
+# Welcome to Reedmaker's Studio
+
+<img src="static/images/Test_responsive.png">
 
 ## Introduction
 Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. 

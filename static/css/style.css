@@ -1,82 +1,99 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
-/* Light theme */
+/* color and fonts */
 :root {
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
-
-  --color-primary: white;
-  --color-secondary:#25291c;
-  --color-tertiary: #bdc0d1;
-  --color-text: #25291c;
-  --color-accent: rgb(231, 231, 181);
-
-  --card-bg: #f0f3b2;
-  --btn-bg: #e6e49f;
-  --btn-hover: #bdc2bf;
-}
-
-/* Dark theme overrides */
-.dark-mode {
-  --color-primary: white;
-  --color-secondary:#25291c;
-  --color-tertiary: #bdc0d1;
-  --color-text: #e3e7d3;
-  --color-accent: #1f15e0;
-
-  --card-bg: #eef5b1;
-  --btn-bg: #bdc2bf;
-  --btn-hover: #989c94;
+  --color-primary: #ffffffff; /* white */
+  --color-secondary:#edf4fa; /* platinum */ 
+  --color-accent-dark: #07a40a; /* darker green */ 
+  --color-accent: #01ab01; /* green */ 
+  --color-accent-light: #90f090; /* green */ 
+  --text-dark: #14213dff; /* oxford blue */
+  --text-normal: #2b2d42; /* graphite */  
+  --text-light: #FCF6BD; /* light yellow */
 }
 
 body {
   font-family: var(--font-secondary);
-  background-color: var(--color-primary);
-  color: var(--color-text);
+  background-color: var(--color-secondary);
+  color: var(--text-dark);
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top:70px;
 }
 
 .navbar {
-    background-color: var(--color-secondary)
-    color: var(--color-primary)
+    background-color: var(--color-secondary);
+    border-bottom: 0.1rem solid var(--color-accent);
+    color: var(--text-normal);
+}
+
+.navbar .btn {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.navbar-brand {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+#footer {
+  min-height: 150px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-primary);
+  color: var(--text-dark);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-primary);
+  color: var(--text-dark);
 }
 
 a {
-  color: var(--color-text);
+  color: var(--text-normal);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 
+.copyright {
+  color: var(--color-accent);
+}
+
 .card {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-primary);
+  border: 1px solid var(--text-normal);
+}
+
+
+.modal {
+  background-color: var(--color-secondary);
   border: none;
+  color: var(--text-dark)
 }
 
-.btn-primary {
-  background-color: var(--btn-bg);
-  border-color: var(--btn-bg);
-  color: var(--color-text);
+.btn-custom-primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--text-light);
 }
-.btn-primary:hover {
-  background-color: var(--btn-hover);
-  border-color: var(--btn-hover);
-  color: var(--color-text);
+.btn-custom-primary:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--text-light);
 }
 
-.btn-secondary {
-    background-color: var(--btn-bg);
-    border-color: var(--btn-bg);
-    color: var(--text);
+.btn-custom-secondary {
+    background-color: var(--color-accent-light);
+    border-color: var(--color-accent-ligth);
+    color: var(--text-light);
   }
-  .btn-secondary:hover {
-    background-color: var(--btn-hover);
-    border-color: var(--btn-hover);
-    color: var(--text);
+  .btn-custom-secondary:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    color: var(--text-light);
   }
