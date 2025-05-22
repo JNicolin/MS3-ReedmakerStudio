@@ -6,7 +6,7 @@
 <p>Do you wish to delete: <strong>{{ object_name }}</strong>?</p>
 <form method="post">
   {% csrf_token %}
-  <button type="submit" class="btn btn-danger">Yes, delete</button>
-  <a href="{{ cancel_url }}" class="btn btn-secondary">Quit</a>
+  <button type="submit" class="btn btn-custom-secondary">Yes, delete</button>
+  <a href="{{ cancel_url }}" class="btn btn-custom-primary">Quit</a>
 </form>
 {% endblock %}

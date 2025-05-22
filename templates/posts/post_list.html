@@ -18,8 +18,8 @@
 <!-- Button to open modal -->
 {% if user.is_authenticated %}
   <div class="text-end mb-4">
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPostModal">
-      ➕ Add New Post
+    <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#addPostModal">
+      Add new post
     </button>
   </div>
 {% endif %}
@@ -39,7 +39,7 @@
           <h5 class="card-title">{{ post.title }}</h5>
           <p class="card-text text-muted">By {{ post.author }}</p>
           <p class="card-text">{{ post.body|truncatechars:200 }}</p>
-          <a href="{% url 'post_detail' post.pk %}" class="btn btn-outline-primary mt-auto">Read more</a>
+          <a href="{% url 'post_detail' post.pk %}" class="btn btn-custom-secondary mt-auto">Read more</a>
         </div>
     
         <div class="card-footer">
