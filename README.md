@@ -101,28 +101,26 @@ Make progress as a reedmaker! Enjoy your reed story!
 
 # Technologies used
 ## Laguages and frameworks
-- HTML
-- CSS
-- JavaScript
-- Django
-- Python
-- Heroku
+- [HTML] (https://www.w3schools.com/html/default.asp)
+- [CSS] (https://www.w3schools.com/css/default.asp) 
+- [JavaScript] (https://www.w3schools.com/JSREF/jsref_reference.asp)
+- [Python] (https://www.w3schools.com/python/default.asp)
+- [Django] (https://docs.djangoproject.com/en/5.2/)
+- [Heroku] (https://www.heroku.com/)
 ## Databases
-- PostgresSQL
+- [PostgresSQL](https://www.postgresql.org/download/)
 ## Tools
 ### Coding
-- Visual Studio Code for coding
-- Git and GitHub for code versioning and project repo
+- [Visual Studio Code](https://code.visualstudio.com/) for coding
+- Git and [GitHub](https://github.com/) for code versioning and project repo
 - GitHub project for planning and user stories
 ### Design
-- Lucidchart for the flowchart
-- Balsamiq for the wireframes
-- dbdiagram for ERD
-- Coolors.com for the color scheme
-- Font awesome for the set of fonts
-- Favicon for icons 
-- Pixabay for royalty free images
-- Unsplash for royalty free images
+- [Lucidchart](https://www.lucidchart.com/pages) for the flowchart
+- [Balsamiq](https://balsamiq.com/) for the wireframes
+- [dbdiagram](https://dbdiagram.io/home)  for ERD
+- [Coolors](https://coolors.co/) for the color scheme
+- [Font awesome](https://fontawesome.com/) for the set of fonts
+- [Pixabay](https://pixabay.com/) and [Unsplash](https://unsplash.com/)for royalty free images
 ### Test
 - Am I Responsive
 - Lighthouse

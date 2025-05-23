@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const filterForm = document.querySelector("#reed-filter-form");
-    if (filterForm) {
-      const selects = filterForm.querySelectorAll("select");
-      selects.forEach(select => {
-        select.addEventListener("change", function () {
-          filterForm.submit();
-        });
-      });
-    }
-});
+document.addEventListener("DOMContentLoaded", function(){
+  const form=document.querySelector("#reed-filter-form")
+  if (form){
+    form.querySelectorAll("select").forEach(select => {
+      select.addEventListener("change", function() {
+        form.submit()
+      })
+    })
+  }
+})
