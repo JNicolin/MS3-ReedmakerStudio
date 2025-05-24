@@ -2,28 +2,46 @@
 
 <img src="static/images/test/Test_responsive.png">
 
+Link to the deployed application [Reedmaker Studio](https://reedmakersblog-cde264c272bc.herokuapp.com/)
+
 ## Introduction
-Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. 
+
+For musicians who play reed instruments—like the clarinet, saxophone, oboe, or bassoon—finding the right reed for each performance is both an art and a constant struggle. Each concert hall, piece of music, and personal nuance demands a different response from the reed. That’s why most players keep multiple reeds on hand, each with unique qualities. Over time, these reeds end up scattered in boxes and cases, difficult to track and even harder to learn from.
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
 |<img src="static/images/content/reedcase_640.jpg" alt="Oboe reedcase"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds"/>| 
 
-A common challenge is to recall which reed has what characteristics and would be the perfect match for an upcoming concert or gig. 
+One of the biggest challenges? Remembering which reed did what, when, and why it worked so well.
 
-**This is where this service comes in!**
+## **Enter Reedmaker Studio**
 
-Use this application to post a digital record of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to help you learn from past experiences and to identify reed preferences. Use this application to post articles about the reedmaking process and comments about other musicians reeds and articles. 
+This application lets you keep a digital record of your reeds — complete with physical measurements, playing characteristics, performance notes, and repertoire history. Think of it as your personal reed logbook, always accessible and built to grow with your experience.
 
-Make progress as a reedmaker! Enjoy your reed story! 
+But that’s not all — Reedmaker Studio also enables you to:
+-	✍️ Share and read articles on reedmaking.
+-	💬 Comment and connect with fellow musicians.
+-	📈 Reflect, learn, and identify trends in your reed preferences.
 
-## Value for a user
-- **Keep a detailed ledger of your reeds**
-  - Register data about your reeds and build a valuable source of information about your reedmaking, your preferences and use of reeds at different gigs. Organize your digital reeds and choose which ones to share with the community. 
-- **Learn from your digital reedcase and be inspired by others'**
-  - Analyse the collected information to reveal patterns and trends in your reedmaking. Use the ledger to recall moments of reed usage. Leverage your reedmaking skills by examining other reedmakers posts.    
-- **Create and read interesting posts about reedmaking**
-  - Reedmaking never stops fascinating the aspiring musician and proffessionals alike. Post or read an article and learn from the content and associated comments.  
+**Make progress as a reedmaker.**
+
+## What you gain as a user
+
+‣ Keep a smart, searchable reed archive
+
+Log your reeds with rich details — from cane source and dimensions to tone quality and usage history. Build a personal archive that helps you remember which reed played beautifully for that Mahler solo — and why.
+
+‣ Discover patterns and sharpen your craft
+
+Your digital reedcase is more than a list. Use it to spot trends over time: what materials suit you best, which shaper yields the right response, how your preferences evolve. Make reedmaking more informed and less trial-and-error.
+
+‣ Connect with a community of reedmakers
+
+Browse blog posts written by other musicians. Learn from their tools, techniques, and mistakes. Or publish your own thoughts — your challenges, your breakthroughs — and start conversations through comments.
+
+‣ Reflect, improve, and grow as a musician
+
+Your reeds are part of your voice. By documenting your process, you’re not just keeping records — you’re learning how to become a better, more consistent player. 
 
 # Contents
 1. [Features](#features)
