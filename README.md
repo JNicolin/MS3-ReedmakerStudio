@@ -197,9 +197,34 @@ You can follow the development progress in the [GitHub Project Board](https://gi
 [![Project Board Screenshot](static/images/project/Kanban.png)](https://github.com/users/JNicolin/projects/8) 
 
 # Testing
-## Manual testing
+## Functional testing
+### Functional test cases
+Below is a list of test cases covering the key functionality of the application, used to verify that key features are working as expected
 
-## Automated testing
+| ID   | Category            | Test Description                                               | Expected Outcome                                          | Actual Outcome |
+|------|---------------------|----------------------------------------------------------------|-----------------------------------------------------------|----------------|
+| TC01 | User authentication | User can register with email and password                      | User account is created and redirected to homepage        |Pass            |
+| TC02 | User authentication | User can log in with valid credentials                         | User is authenticated and redirected to homepage          |Pass            |
+| TC03 | User access control | Unauthenticated user cannot access create/update/delete views  | Redirects to login page                                   |Pass            |
+| TC04 | Blogging            | Logged-in user can create a new post                           | Post appears on blog list                                 |Pass            |
+| TC05 | Blogging            | Only author sees edit/delete buttons on their own post         | Buttons are visible to author only                        |Pass            |
+| TC06 | Blogging            | Post list displays title, author, and excerpt                  | Correct summary is shown in cards                         |Pass            |
+| TC07 | Blogging            | Detailed post view correctly linked from listview              | Correct post detail opens in the detail page              |Pass            |
+| TC08 | Reeds management    | Logged-in user can add new reed                                | Reed appears in list and detail view                      |Pass            |
+| TC09 | Reeds management    | Logged-in user can add an Event                                | The new Event shows on the Reed detail view               |Pass            |
+| TC10 | Reeds management    | Logged-in user can add a Repertoire                            | The new Repertoire shows on the Reed detail view          |Pass            |
+| TC11 | Reeds management    | Reed list is filterable by instrument                          | Filter narrows down list correctly                        |Pass            |
+| TC12 | Reeds management    | Reed list can be sorted on rating                              | Order is reflecting sorting order                         |Pass            |
+| TC13 | Reeds management    | Reed list is automatically adjusted on change in filter/sort   | List view adjust on change in sorting or filter form      |Pass            |
+| TC14 | Reeds management    | Detailed reed view correctly linked from listview              | Correct reed detail opens in the detail page              |Pass            |
+| TC15 | Reeds management    | Reed detail shows correct material, characteristics, etc.      | All details rendered properly                             |Pass            |
+| TC16 | Commenting          | Logged-in user can comment on a Reed                           | Comment appears under correct reed                        |Pass            |
+| TC17 | Commenting          | Logged-in user can comment on a blog Post                      | Comment appears under correct blogpost                    |Pass            |
+| TC18 | Commenting          | Comments modal triggers from detail Reed view                  | Modal opens with form                                     |Pass            |
+| TC19 | Commenting          | Comments modal triggers from detail Post view                  | Modal opens with form                                     |Pass            |
+| TC20 | Commenting          | Anonymous users cannot post comments                           | Redirected to login or see disabled button                |Pass            |
+
+## Code validation, static testing
 ### CSS, HTML and JavaScript validation
  - All CSS was validated in the W3 group validator: No remaining comments or errors
  - All HTML vwas validate in W3 group validator: No remaining comments or errors
@@ -208,8 +233,26 @@ You can follow the development progress in the [GitHub Project Board](https://gi
 
     ![Lighthouse test result](static/images/test/Lighthouse.jpg)
 
+## Test of deploy to production environment in Heruko
+###
+Steps to deploy this application to heruko
+1. **Sign in to Heroku**
+2. **Connect to repository on GitHub** <br>
+Under the Deploy tab, find Deployment method → GitHub and search the correct repo (e.g. MS3-ReedmakerStudio).
 
-- TBD - deploying to Herouku
+3. **ReedStudio expects these config variables**<br>
+Go to the Settings tab → Reveal Config Vars, and add:
+    ```
+    DATABASE_URL='your PostgreSQL db url'
+    DISABLE_COLLECTSTATIC=0
+    DJANGO_ENV=production # ensures correct settings file is used
+    SECRET_KEY='a secret key of your choice'
+    ```
+4. **Push manual deploy from main branch** 
+
+    Result: Deploy works with no errors:<br><br> 
+    ![Deploy to production result](static/images/test/DeployResult.jpg)
+
 # Known issues and Future features
 ## Known issues
 - TBD - From testing and restlist
