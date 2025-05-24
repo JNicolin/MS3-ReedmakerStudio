@@ -41,28 +41,31 @@ Make progress as a reedmaker! Enjoy your reed story!
   
   A visitor on the website can access public information such as read access to the Reedmaking blog, public reed specifications and comments. A visitor can choose to become a community member by signing up for a user account. Signed in user can post data about reeds and to post comments on reeds and blog-posts. 
 
+  <img src="static/images/design/Feature_Register.png" alt="Feature register account" width="300">
+
 - Post data about one of your reeds
   
   A signed in user can post data about their reeds, such as material, measures, quality of sound and at which event it was played.
-- Organize your registered reeds in categories - or "reed cases"
-  
-  A signed in user can organize posted reeds in categories, eg reeds for "chamber music", "symphony orchestra", "club gigs" or "practice".
+
+  <img src="static/images/design/Feature_CreateReed.png" alt="Feature post a reed" width="300">
 
 - Filter and search for reeds based on keywords and characteristics
   
   A signed in user can search among posted reeds to recall what types of reeds have a sound quailty of "bright" or what reeds have been used for "jazz gigs". 
 
-- Make a selection of your reeds public for others to see and comment
-  
-  A signed in user can chose wether to keep reed specifications to herself, or if to make them publically available for anyone to see. Other signed in users can post comments to public reed posts. 
+  <img src="static/images/design/Feature_Filter.png" alt="Feature filter list of reeds" width="300">
 
 - Post articles about reedmaking
   
   A signed in user can create an article about some aspect of Reedmaking. A user may have a reflection on the selection of cane or about a tool that may be of interest to others. 
 
+    <img src="static/images/design/Feature_CreatePost.png" alt="Feature blog post" width="300">
+
 - Comment on articles about reedmaking or published reeds
   
   A signed in user can post comments to articles about reedmaking or to reeds that another user has chosen to make public.
+  
+  <img src="static/images/design/Feature_Comment.png" alt="Feature add comment" width="300">
 
 # User experience 
 ## Design choices, guiding principles
@@ -129,7 +132,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 - [W3 CSS validator](https://jigsaw.w3.org/css-validator/)
 - [PEPCI8 Linter from Code Institute](https://pep8ci.herokuapp.com/#)
 # Agile methodology
-## 🗂️ Project planning with Epics & Tasks
+## Project planning with Epics & Tasks
 
 The project is organized according to agile concepts with Epics grouping related Tasks. This is an overview of tasks performed to complete this project.
 
