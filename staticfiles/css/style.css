@@ -40,7 +40,7 @@ body {
 }
 
 #footer {
-  min-height: 150px;
+  min-height: 18rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: var(--color-primary);
@@ -88,9 +88,9 @@ a:hover {
 }
 
 .btn-custom-secondary {
-    background-color: var(--color-accent-light);
-    border-color: var(--color-accent-ligth);
-    color: var(--text-light);
+    background-color: var(--color-primary);
+    border-color: var(--color-accent-dark);
+    color: var(--color --color-accent-dark);
   }
   .btn-custom-secondary:hover {
     background-color: var(--color-accent-dark);

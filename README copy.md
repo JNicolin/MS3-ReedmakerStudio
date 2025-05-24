@@ -128,73 +128,39 @@ Make progress as a reedmaker! Enjoy your reed story!
 - [W3 CSS validator](https://jigsaw.w3.org/css-validator/)
 - [PEPCI8 Linter from Code Institute](https://pep8ci.herokuapp.com/#)
 # Agile methodology
-## 🗂️ Epics & Tasks
+## Epics and user stories to plan the project
+### Epic 1: Site administration
+As an administrator of the site I need to manage user accounts, posts and comments, to ensure that the site is kept consistent, ethic and appreciated over time.\
 
-The project is organized according to agile concepts with Epics grouping related Tasks. This is an overview of tasks performed to complete this project.
+**User stories**
+- As an administrator I need to manage accounts, to help and support users in using the site
+- As an administrator, I need to manage posts, to approve and perform CRUD activities to keep the site nice and tidy over time
+- As an adminstrator I need to manage comments, to approve comments to ensure ethics, and alignment with intent.   
 
-### 🛫 Epic: Initiate environment
-- [ ] [Install packages and dependencies](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
-- [ ] [Create Django project with apps: reeds, posts, comments](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/15)
-- [ ] [Prepare dev and prod databases and deploys](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
+### Epic 2: Posting, organizing and searching among reeds
+As a member of the service I want to post data about my reeds in a nicely structured, to help me find the specification I need for a future occasion.\
 
-### 👥 Epic: User Authentication & Accounts
-- [x] [Create user login, logout and register with django-allauth](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
-- [x] [Register New Users](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
-- [x] [Style Allauth forms with Bootstrap](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/14)
+- **User stories**
+  - As a member, I want to post data of my reeds, to keep a ledger over time
+  - As a member, I want to select which of my reeds to make publicly visible, to get comments and recoginition from the reeds of my choice
+  - As a member, I want to search and filter out sections of my posted reeds, based on keywords and reed characteristics, to get inspiration for the making of new reeds and to learn about my preferences
+  - As a member, I want to organize my reeds in categories, to help me sort the reeds over time  
 
-### 🎼 Epic: Reed Management
-- [ ] [Implement Reed model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/7)
-- [x] [Implement CRUD views for Reed, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
-- [ ] [Create event, repertoire and instrument model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/29)
-- [ ] [Reed listview with filtering and sorting](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/2)
-- [ ] [Reed detail view with comments, events, repertoire](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
-- [ ] [Add filering on instrument and rating in list view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/26)
-- [ ] [JavaScript to auto-submit filter form on change](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/38)
-- [ ] [Use modals to add events and repertoire from reed detail view ](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/30)
-- [ ] [Limit Edit/Delete to owner only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
+### Epic 3: Posting articles on reedmaking
+As a member of the site I want to share my thoughts and reflections on aspects of the reedmaking process, to inspire and be inspired by other reedmakers and musicians.\
 
-### 📰 Epic: Blog Posts
-- [x] [Implement post model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/18)
-- [x] [Implement CRUD views for Post, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
-- [ ] [Use modal to add posts from Post detail view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/32)
-- [x] [Implement responsive cards for Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/6)
+- **User stories**
+  - As a member, I want to share insights and knowledge from the reedmaking process, to inspire other musicians and to learn from others.
 
-### 📝 Epic: Reusable Comments for Reeds and Posts
-- [x] [Implement Comment model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/18)
-- [x] [Connect Comment model generically to both Post and Reed](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/19)
-- [x] [Create CRUD views for Comments, with logged in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/17)
+### Epic 4: Reading and commenting on reeds and articles
+As a visitor of the site, I want to take part of published content, and to post comments on published content, to contribute to the shared knowledge and to show appreciation.\
 
-### 🎨 Epic: UI & Styling
-- [x] [Design `base.html` with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/20)
-- [x] [Design modular '_component.html' with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/21)
-- [x] [Ensure responsive Navbar with login/logout/register buttons](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/34)
-- [x] [Footer stays at bottom](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/36)
-- [x] [Add consistent color scheme with custom CSS](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/31)
-- [ ] [Create custom buttons with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
-- [ ] [Ensure responsiveness for all key templates](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/35)
-- [ ] [Add crispy-forms for all forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/22)
-
-### 🥸 Epic: Administration panel
-- [ ] [Register models with Django administration](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/9)
-- [ ] [Ensure all administration tasks are accessible as superuser](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/5)
-
-### 🧪 Epic: Testing & Deployment
-- [ ] [Manual Testing for Responsiveness](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
-- [ ] [Write Tests for Reeds and Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
-- [ ] [Deploy to Heroku](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/39)
-- [ ] [Validate code, CSS, HTML](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/3)
-- [ ] [Create content for testing, to validate user experience](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/4)
-
----
-
-🔗 Du hittar alla öppna och stängda issues här: [Issue Tracker](https://github.com/JNicolin/MS3-ReedmakerStudio/issues)
+- **User stories**
+  - As a visitor, I want to post comments to posted articles, to show appreciation and contribution
+  - As a vistor, I want to post comments to posted reed specifications, to show appreciation and contribution
 
 ## Kanban to visualize and follow progress
-## Project Board
-
-You can follow the development progress in the [GitHub Project Board](https://github.com/users/JNicolin/projects/8)
-
-[![Project Board Screenshot](static/images/Kanban.png)](https://github.com/users/JNicolin/projects/8) 
+<img src="static/images/Kanban.png" alt="Kanban" width="400"/> 
 
 # Testing
 - TBD
