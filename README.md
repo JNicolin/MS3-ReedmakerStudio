@@ -10,11 +10,11 @@ For musicians who play reed instruments—like the clarinet, saxophone, oboe, or
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
-|<img src="static/images/content/reedcase_640.jpg" alt="Oboe reedcase"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds"/>| 
+|<img src="static/images/content/reedcase_640.jpg" alt="Oboe reedcase" width="400"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds" width="400"/>| 
 
 One of the biggest challenges? Remembering which reed did what, when, and why it worked so well.
 
-## **Enter Reedmaker Studio**
+## **This is where Reedmaker Studio comes in**
 
 This application lets you keep a digital record of your reeds — complete with physical measurements, playing characteristics, performance notes, and repertoire history. Think of it as your personal reed logbook, always accessible and built to grow with your experience.
 
@@ -27,21 +27,21 @@ But that’s not all — Reedmaker Studio also enables you to:
 
 ## What you gain as a user
 
-‣ Keep a smart, searchable reed archive
+**Keep a smart, searchable reed archive**
 
-Log your reeds with rich details — from cane source and dimensions to tone quality and usage history. Build a personal archive that helps you remember which reed played beautifully for that Mahler solo — and why.
+  - Log your reeds with rich details — from cane source and dimensions to tone quality and usage history. Build a personal archive that helps you remember which reed played beautifully for that Mahler solo — and why.
 
-‣ Discover patterns and sharpen your craft
+**Discover patterns and sharpen your craft**
 
-Your digital reedcase is more than a list. Use it to spot trends over time: what materials suit you best, which shaper yields the right response, how your preferences evolve. Make reedmaking more informed and less trial-and-error.
+  - Your digital reedcase is more than a list. Use it to spot trends over time: what materials suit you best, which shaper yields the right response, how your preferences evolve. Make reedmaking more informed and less trial-and-error.
 
-‣ Connect with a community of reedmakers
+**Connect with a community of reedmakers**
 
-Browse blog posts written by other musicians. Learn from their tools, techniques, and mistakes. Or publish your own thoughts — your challenges, your breakthroughs — and start conversations through comments.
+  - Browse blog posts written by other musicians. Learn from their tools, techniques, and mistakes. Or publish your own thoughts — your challenges, your breakthroughs — and start conversations through comments.
 
-‣ Reflect, improve, and grow as a musician
+**Reflect, improve, and grow as a musician**
 
-Your reeds are part of your voice. By documenting your process, you’re not just keeping records — you’re learning how to become a better, more consistent player. 
+  - Your reeds are part of your voice. By documenting your process, you’re not just keeping records — you’re learning how to become a better, more consistent player. 
 
 # Contents
 1. [Features](#features)
