@@ -91,6 +91,331 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-05-24T20:03:49.288Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "1B, ca, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"A little bright? by Sara_Bassoon\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-05-24T20:04:55.177Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "2A, ca, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-05-24T20:05:40.434Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "3A, da, 0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-05-24T20:06:51.457Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "4, bo, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-05-24T20:07:38.752Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "5A, hp, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-05-24T20:08:17.655Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "6A, bs, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-05-24T20:09:04.794Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "A, hp, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-05-24T20:09:46.554Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "B, kb, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-05-24T20:10:14.966Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "C, kb, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-05-24T20:10:49.545Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "D, BbC, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-05-24T20:11:08.772Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "7A, AC, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-05-24T20:11:28.622Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "8, CC, 0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-05-24T20:11:58.153Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "9, EbC, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-05-24T20:12:17.044Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "15",
+    "object_repr": "10, BC, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-05-24T20:12:40.425Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "16",
+    "object_repr": "11, KC, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-05-24T20:13:06.872Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "17",
+    "object_repr": "12, KC, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-05-24T20:13:36.738Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "18",
+    "object_repr": "13, SS, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-05-24T20:13:55.156Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "Karl_Saxophone",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-05-24T20:14:13.469Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "19",
+    "object_repr": "A6, AS, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-05-24T20:14:40.750Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "20",
+    "object_repr": "A7, TS, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-05-24T20:15:15.442Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "21",
+    "object_repr": "7C, BS, 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-05-24T20:15:43.867Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "22",
+    "object_repr": "8A, KS, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-05-24T20:16:18.107Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "23",
+    "object_repr": "9A, ob, 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-05-24T20:17:50.363Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "24",
+    "object_repr": "13A, ob, 0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-05-24T20:18:31.999Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "25",
+    "object_repr": "7E, ob, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -599,7 +924,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$1000000$8Wu4dFuV2f1tYIRKJeHpSO$EQsNM8tNkQbbeTRxGnBb4b+Bf6CARcJ8W1XvdLlTX8k=",
-    "last_login": "2025-05-24T17:56:07.795Z",
+    "last_login": "2025-05-24T20:02:13.336Z",
     "is_superuser": true,
     "username": "johannicolin",
     "first_name": "",
@@ -662,6 +987,24 @@
     "is_staff": false,
     "is_active": true,
     "date_joined": "2025-05-24T17:52:22.171Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$3cCOGjvQj5Lcq85RkS0tBP$vioZmMBPrqjjMz8r9kotpQBCWVBiBShmfdfj/5uk7hA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Karl_Saxophone",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-24T20:13:55.018Z",
     "groups": [],
     "user_permissions": []
   }
@@ -889,6 +1232,582 @@
   }
 },
 {
+  "model": "reeds.reed",
+  "pk": 2,
+  "fields": {
+    "item_id": "1B",
+    "item_visibility": 1,
+    "item_comment": "Hand made",
+    "item_type": "ca",
+    "item_creator": 4,
+    "item_rating": 3,
+    "descr_resistance": 2,
+    "descr_sound": 1,
+    "descr_response": 2,
+    "descr_length": 71.0,
+    "staple_model": "RC13",
+    "staple_length": 47.0,
+    "staple_material": "Gold",
+    "cane_gauge_thickness": 56.0,
+    "cane_shaper_form": "RC1",
+    "cane_supplier": "Dorati",
+    "created_on": "2025-05-24T20:03:49.286Z",
+    "updated_on": "2025-05-24T20:03:49.287Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 3,
+  "fields": {
+    "item_id": "2A",
+    "item_visibility": 1,
+    "item_comment": "Hand made with care",
+    "item_type": "ca",
+    "item_creator": 4,
+    "item_rating": 2,
+    "descr_resistance": 0,
+    "descr_sound": 3,
+    "descr_response": 0,
+    "descr_length": null,
+    "staple_model": "RC5",
+    "staple_length": 46.0,
+    "staple_material": "Silver",
+    "cane_gauge_thickness": 58.0,
+    "cane_shaper_form": "RC11",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:04:55.176Z",
+    "updated_on": "2025-05-24T20:04:55.176Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 4,
+  "fields": {
+    "item_id": "3A",
+    "item_visibility": 1,
+    "item_comment": "Using reed cube",
+    "item_type": "da",
+    "item_creator": 4,
+    "item_rating": 0,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": 70.0,
+    "staple_model": "Mayer",
+    "staple_length": 45.0,
+    "staple_material": "Brass",
+    "cane_gauge_thickness": 59.0,
+    "cane_shaper_form": "Mayer",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:05:40.433Z",
+    "updated_on": "2025-05-24T20:05:40.433Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 5,
+  "fields": {
+    "item_id": "4",
+    "item_visibility": 1,
+    "item_comment": "RnS shaper 2",
+    "item_type": "bo",
+    "item_creator": 4,
+    "item_rating": 2,
+    "descr_resistance": 1,
+    "descr_sound": 4,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "Glotin",
+    "staple_length": 46.0,
+    "staple_material": "Brass",
+    "cane_gauge_thickness": 57.0,
+    "cane_shaper_form": "Diana",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:06:51.455Z",
+    "updated_on": "2025-05-24T20:06:51.455Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 6,
+  "fields": {
+    "item_id": "5A",
+    "item_visibility": 1,
+    "item_comment": "Rns Shaper 4",
+    "item_type": "hp",
+    "item_creator": 4,
+    "item_rating": 3,
+    "descr_resistance": 0,
+    "descr_sound": 1,
+    "descr_response": 1,
+    "descr_length": 72.0,
+    "staple_model": "RC4",
+    "staple_length": 46.0,
+    "staple_material": "Brass",
+    "cane_gauge_thickness": 57.0,
+    "cane_shaper_form": "RC12",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:07:38.751Z",
+    "updated_on": "2025-05-24T20:07:38.751Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 7,
+  "fields": {
+    "item_id": "6A",
+    "item_visibility": 0,
+    "item_comment": "Hand made",
+    "item_type": "bs",
+    "item_creator": 3,
+    "item_rating": 2,
+    "descr_resistance": 0,
+    "descr_sound": 3,
+    "descr_response": 0,
+    "descr_length": 60.0,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": 56.0,
+    "cane_shaper_form": "RC1",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:08:17.654Z",
+    "updated_on": "2025-05-24T20:08:17.654Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 8,
+  "fields": {
+    "item_id": "A",
+    "item_visibility": 0,
+    "item_comment": "Hand made with care",
+    "item_type": "hp",
+    "item_creator": 4,
+    "item_rating": 2,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 2,
+    "descr_length": 66.0,
+    "staple_model": "RC12",
+    "staple_length": 52.0,
+    "staple_material": "Silver",
+    "cane_gauge_thickness": 60.0,
+    "cane_shaper_form": "RC5",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:09:04.793Z",
+    "updated_on": "2025-05-24T20:09:04.793Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 9,
+  "fields": {
+    "item_id": "B",
+    "item_visibility": 1,
+    "item_comment": "Using profiler from RnS",
+    "item_type": "kb",
+    "item_creator": 3,
+    "item_rating": 3,
+    "descr_resistance": 1,
+    "descr_sound": 1,
+    "descr_response": 1,
+    "descr_length": 62.0,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": "RC4",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:09:46.553Z",
+    "updated_on": "2025-05-24T20:09:46.553Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 10,
+  "fields": {
+    "item_id": "C",
+    "item_visibility": 1,
+    "item_comment": "Hand made at home",
+    "item_type": "kb",
+    "item_creator": 3,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": "RC6",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:10:14.965Z",
+    "updated_on": "2025-05-24T20:10:14.965Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 11,
+  "fields": {
+    "item_id": "D",
+    "item_visibility": 1,
+    "item_comment": "Profiler Rieger 2",
+    "item_type": "BbC",
+    "item_creator": 2,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": 63.0,
+    "cane_shaper_form": null,
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:10:49.544Z",
+    "updated_on": "2025-05-24T20:10:49.544Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 12,
+  "fields": {
+    "item_id": "7A",
+    "item_visibility": 1,
+    "item_comment": "",
+    "item_type": "AC",
+    "item_creator": 2,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:11:08.771Z",
+    "updated_on": "2025-05-24T20:11:08.771Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 13,
+  "fields": {
+    "item_id": "8",
+    "item_visibility": 1,
+    "item_comment": "",
+    "item_type": "CC",
+    "item_creator": 2,
+    "item_rating": 0,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:11:28.621Z",
+    "updated_on": "2025-05-24T20:11:28.621Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 14,
+  "fields": {
+    "item_id": "9",
+    "item_visibility": 0,
+    "item_comment": "From March 2025",
+    "item_type": "EbC",
+    "item_creator": 2,
+    "item_rating": 3,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:11:58.152Z",
+    "updated_on": "2025-05-24T20:11:58.152Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 15,
+  "fields": {
+    "item_id": "10",
+    "item_visibility": 1,
+    "item_comment": "",
+    "item_type": "BC",
+    "item_creator": 2,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:12:17.043Z",
+    "updated_on": "2025-05-24T20:12:17.043Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 16,
+  "fields": {
+    "item_id": "11",
+    "item_visibility": 1,
+    "item_comment": "A nice sound",
+    "item_type": "KC",
+    "item_creator": 2,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:12:40.424Z",
+    "updated_on": "2025-05-24T20:12:40.424Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 17,
+  "fields": {
+    "item_id": "12",
+    "item_visibility": 1,
+    "item_comment": "Heavy duty",
+    "item_type": "KC",
+    "item_creator": 2,
+    "item_rating": 1,
+    "descr_resistance": 2,
+    "descr_sound": 4,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:13:06.871Z",
+    "updated_on": "2025-05-24T20:13:06.871Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 18,
+  "fields": {
+    "item_id": "13",
+    "item_visibility": 1,
+    "item_comment": "I like this a lot",
+    "item_type": "SS",
+    "item_creator": 1,
+    "item_rating": 1,
+    "descr_resistance": 2,
+    "descr_sound": 3,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:13:36.737Z",
+    "updated_on": "2025-05-24T20:13:36.737Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 19,
+  "fields": {
+    "item_id": "A6",
+    "item_visibility": 0,
+    "item_comment": "",
+    "item_type": "AS",
+    "item_creator": 5,
+    "item_rating": 1,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:14:13.469Z",
+    "updated_on": "2025-05-24T20:14:13.469Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 20,
+  "fields": {
+    "item_id": "A7",
+    "item_visibility": 1,
+    "item_comment": "From France",
+    "item_type": "TS",
+    "item_creator": 5,
+    "item_rating": 3,
+    "descr_resistance": 0,
+    "descr_sound": 2,
+    "descr_response": 0,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:14:40.749Z",
+    "updated_on": "2025-05-24T20:14:40.749Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 21,
+  "fields": {
+    "item_id": "7C",
+    "item_visibility": 1,
+    "item_comment": "From Italy",
+    "item_type": "BS",
+    "item_creator": 5,
+    "item_rating": 1,
+    "descr_resistance": 0,
+    "descr_sound": 1,
+    "descr_response": 2,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:15:15.441Z",
+    "updated_on": "2025-05-24T20:15:15.441Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 22,
+  "fields": {
+    "item_id": "8A",
+    "item_visibility": 1,
+    "item_comment": "Concert ready",
+    "item_type": "KS",
+    "item_creator": 5,
+    "item_rating": 3,
+    "descr_resistance": 1,
+    "descr_sound": 3,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "",
+    "staple_length": null,
+    "staple_material": "",
+    "cane_gauge_thickness": null,
+    "cane_shaper_form": null,
+    "cane_supplier": "Van Doren",
+    "created_on": "2025-05-24T20:15:43.866Z",
+    "updated_on": "2025-05-24T20:15:43.866Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 23,
+  "fields": {
+    "item_id": "9A",
+    "item_visibility": 1,
+    "item_comment": "",
+    "item_type": "ob",
+    "item_creator": 1,
+    "item_rating": 3,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": 72.0,
+    "staple_model": "Rigotti 2",
+    "staple_length": 47.0,
+    "staple_material": "Brass",
+    "cane_gauge_thickness": 59.0,
+    "cane_shaper_form": "RC13",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:16:18.106Z",
+    "updated_on": "2025-05-24T20:16:18.106Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 24,
+  "fields": {
+    "item_id": "13A",
+    "item_visibility": 1,
+    "item_comment": "Hand made after profiler",
+    "item_type": "ob",
+    "item_creator": 4,
+    "item_rating": 0,
+    "descr_resistance": 0,
+    "descr_sound": 0,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "RC12",
+    "staple_length": 46.0,
+    "staple_material": "Gold",
+    "cane_gauge_thickness": 57.0,
+    "cane_shaper_form": "RC13",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:17:50.362Z",
+    "updated_on": "2025-05-24T20:17:50.362Z"
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 25,
+  "fields": {
+    "item_id": "7E",
+    "item_visibility": 1,
+    "item_comment": "Profiler from RnS",
+    "item_type": "ob",
+    "item_creator": 1,
+    "item_rating": 2,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": null,
+    "staple_model": "Glotin",
+    "staple_length": 47.0,
+    "staple_material": "Silver",
+    "cane_gauge_thickness": 57.0,
+    "cane_shaper_form": "RC13",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T20:18:31.998Z",
+    "updated_on": "2025-05-24T20:18:31.998Z"
+  }
+},
+{
   "model": "reeds.event",
   "pk": 1,
   "fields": {
@@ -1077,6 +1996,20 @@
     "approved": false,
     "content_type": 11,
     "object_id": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 12,
+  "fields": {
+    "title": "A little bright?",
+    "body": "This reed may be bright due to the thin gauge",
+    "author": 3,
+    "created_on": "2025-05-24T20:03:49.287Z",
+    "updated_on": "2025-05-24T20:03:49.287Z",
+    "approved": false,
+    "content_type": 11,
+    "object_id": 2
   }
 }
 ]
