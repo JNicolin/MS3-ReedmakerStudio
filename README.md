@@ -1,13 +1,13 @@
 # Welcome to Reedmaker's Studio
 
-<img src="static/images/Test_responsive.png">
+<img src="static/images/test/Test_responsive.png">
 
 ## Introduction
 Musicians playing instruments with a reed spend a lot of time obsessing over which reed to play for the next concert. Players of Clarinet, Saxophone, Oboe and Basson all share a common challenge of finding a reed that will suite the accoustic, the repertoire, individual preferences and level of playing. Most players keep a number of reeds of different characteristics in order to have something available for every occasion, which means a number of reeds laying around in boxes and cases. 
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
-|<img src="static/images/reedcase_1280.jpg" alt="Oboe reedcase"/> |<img src="static/images/clarinet_reeds.png" alt="Clarinet reeds"/>| 
+|<img src="static/images/content/reedcase_1280.jpg" alt="Oboe reedcase"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds"/>| 
 
 A common challenge is to recall which reed has what characteristics and would be the perfect match for an upcoming concert or gig. 
 
@@ -73,31 +73,31 @@ Make progress as a reedmaker! Enjoy your reed story!
 
 ## Fonts
 - The set of fonts was chosen for a modern and crisp look on the Website. Montserrat and Roboto are both appreciated as being clear and easy to read. Elegant yet professional.  
-<img src="static/images/Fonts.png" alt="Selected fonts" width="400"/> 
+<img src="static/images/design/Fonts.png" alt="Selected fonts" width="500"/>
 
 ## Color schemes
-- The colorscheme was selected with the basic color of cane and wood in mind. The slightly beige and yellow tones combined with some matching colors were chosen to give a clean yet stylish impression. 
-<img src="static/images/MS3_color_scheme.png" alt="Color scheme" width="400"/> 
+- The colorscheme was selected with the basic color of cane and wood in mind. 
+- <img src="static/images/design/MS3_color_scheme.png" alt="Color scheme"  width="500"/> 
 
 ## Wireframes
 | Start page | Login form | 
 | ---------  | ---------  |
-|<img src="static/images/WF_Startpage.png" alt="Startpage"/> | <img src="static/images/WF_LoginForm.png" alt="Login"/> |
+|<img src="static/images/design/WF_Startpage.png" alt="Startpage"/> | <img src="static/images/design/WF_LoginForm.png" alt="Login"/> |
 
 | Reeds list page | Reed detail page |
 |  ---------------| ------------| 
-| <img src="static/images/WF_ReedsListPage.png" alt="Reed list"/> | <img src="static/images/WF_ReedDetailPage.png" alt="Reed detail"/> |
+| <img src="static/images/design/WF_ReedsListPage.png" alt="Reed list"/> | <img src="static/images/design/WF_ReedDetailPage.png" alt="Reed detail"/> |
 
 | Post list page | Post detail page |
 | -------------- | ---------------- |
-| <img src="static/images/WF_BlogPostsList.png" alt="Post list"/> | <img src="static/images/WF_BlogPostPage.png" alt="Post detail"/> |
+| <img src="static/images/design/WF_BlogPostsList.png" alt="Post list"/> | <img src="static/images/design/WF_BlogPostPage.png" alt="Post detail"/> |
 
 # Information architecture
 ## Flowchart Webb
-<img src="static/images/WebFlowchart.png" alt="Flowchart for web" width="500"/>
+<img src="static/images/design/WebFlowchart.png" alt="Flowchart for web"/>
 
 ## Database design, ERD
-<img src="static/images/ERD.png" alt="ER-diagram" width="500"/>
+<img src="static/images/design/ERD.png" alt="ER-diagram"/>
 
 # Technologies used
 ## Laguages and frameworks
@@ -128,14 +128,14 @@ Make progress as a reedmaker! Enjoy your reed story!
 - [W3 CSS validator](https://jigsaw.w3.org/css-validator/)
 - [PEPCI8 Linter from Code Institute](https://pep8ci.herokuapp.com/#)
 # Agile methodology
-## 🗂️ Epics & Tasks
+## 🗂️ Project planning with Epics & Tasks
 
 The project is organized according to agile concepts with Epics grouping related Tasks. This is an overview of tasks performed to complete this project.
 
 ### 🛫 Epic: Initiate environment
-- [ ] [Install packages and dependencies](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
-- [ ] [Create Django project with apps: reeds, posts, comments](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/15)
-- [ ] [Prepare dev and prod databases and deploys](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
+- [x] [Install packages and dependencies](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
+- [x] [Create Django project with apps: reeds, posts, comments](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/15)
+- [x] [Prepare dev and prod databases and deploys](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
 
 ### 👥 Epic: User Authentication & Accounts
 - [x] [Create user login, logout and register with django-allauth](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
@@ -143,20 +143,20 @@ The project is organized according to agile concepts with Epics grouping related
 - [x] [Style Allauth forms with Bootstrap](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/14)
 
 ### 🎼 Epic: Reed Management
-- [ ] [Implement Reed model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/7)
+- [x] [Implement Reed model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/7)
 - [x] [Implement CRUD views for Reed, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
-- [ ] [Create event, repertoire and instrument model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/29)
-- [ ] [Reed listview with filtering and sorting](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/2)
-- [ ] [Reed detail view with comments, events, repertoire](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
-- [ ] [Add filering on instrument and rating in list view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/26)
-- [ ] [JavaScript to auto-submit filter form on change](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/38)
-- [ ] [Use modals to add events and repertoire from reed detail view ](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/30)
-- [ ] [Limit Edit/Delete to owner only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
+- [x] [Create event, repertoire and instrument model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/29)
+- [x] [Reed listview with filtering and sorting](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/2)
+- [x] [Reed detail view with comments, events, repertoire](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
+- [x] [Add filering on instrument and rating in list view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/26)
+- [x] [JavaScript to auto-submit filter form on change](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/38)
+- [x] [Use modals to add events and repertoire from reed detail view ](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/30)
+- [x] [Limit Edit/Delete to owner only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
 
 ### 📰 Epic: Blog Posts
 - [x] [Implement post model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/18)
 - [x] [Implement CRUD views for Post, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
-- [ ] [Use modal to add posts from Post detail view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/32)
+- [x] [Use modal to add posts from Post detail view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/32)
 - [x] [Implement responsive cards for Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/6)
 
 ### 📝 Epic: Reusable Comments for Reeds and Posts
@@ -170,45 +170,53 @@ The project is organized according to agile concepts with Epics grouping related
 - [x] [Ensure responsive Navbar with login/logout/register buttons](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/34)
 - [x] [Footer stays at bottom](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/36)
 - [x] [Add consistent color scheme with custom CSS](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/31)
-- [ ] [Create custom buttons with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
-- [ ] [Ensure responsiveness for all key templates](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/35)
-- [ ] [Add crispy-forms for all forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/22)
+- [x] [Create custom buttons with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
+- [x] [Ensure responsiveness for all key templates](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/35)
+- [x] [Add crispy-forms for all forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/22)
 
 ### 🥸 Epic: Administration panel
-- [ ] [Register models with Django administration](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/9)
-- [ ] [Ensure all administration tasks are accessible as superuser](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/5)
+- [x] [Register models with Django administration](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/9)
+- [x] [Ensure all administration tasks are accessible as superuser](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/5)
 
 ### 🧪 Epic: Testing & Deployment
-- [ ] [Manual Testing for Responsiveness](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
-- [ ] [Write Tests for Reeds and Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
-- [ ] [Deploy to Heroku](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/39)
-- [ ] [Validate code, CSS, HTML](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/3)
-- [ ] [Create content for testing, to validate user experience](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/4)
+- [x] [Manual testing for responsiveness](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
+- [x] [Write tests for Reeds and Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
+- [x] [Deploy to Heroku](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/39)
+- [x] [Validate code, CSS, HTML](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/3)
+- [x] [Create content for testing, to validate user experience](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/4)
 
 ---
 
 🔗 Du hittar alla öppna och stängda issues här: [Issue Tracker](https://github.com/JNicolin/MS3-ReedmakerStudio/issues)
 
 ## Kanban to visualize and follow progress
-## Project Board
+### Project Board
 
 You can follow the development progress in the [GitHub Project Board](https://github.com/users/JNicolin/projects/8)
 
-[![Project Board Screenshot](static/images/Kanban.png)](https://github.com/users/JNicolin/projects/8) 
+[![Project Board Screenshot](static/images/project/Kanban.png)](https://github.com/users/JNicolin/projects/8) 
 
 # Testing
-- TBD
-- Manual and Automated testing
-- Results and evidence
+## Manual testing
+
+## Automated testing
+### CSS, HTML and JavaScript validation
+ - All CSS was validated in the W3 group validator: No remaining comments or errors
+ - All HTML vwas validate in W3 group validator: No remaining comments or errors
+ - The JavaScript was run through the CI Linter app: No remaining errors
+ - Chrome lighthouse testing for performance, accessibility and coding standard
+
+    ![Lighthouse test result](static/images/test/Lighthouse.jpg)
+
 
 - TBD - deploying to Herouku
 # Known issues and Future features
 ## Known issues
 - TBD - From testing and restlist
 
-## Future features
+## 💡 Future features
 ###
-I keep a list of feature cards in my [GitHub Project Board](https://github.com/users/JNicolin/projects/8). Future features that are more or less ideas are labelled as **Ideas** in the board. This is an extract of Ideas at the time of writing this text:
+I keep a list of feature cards in my [GitHub Project Board](https://github.com/users/JNicolin/projects/8). Future features that are more or less ideas are labelled as **Enhancement** in the board. This is an extract of Ideas at the time of writing this text:
 - [Filter the reed listview to see my owned reeds only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/41)
 - [Upload photos of reeds direct from a mobile camera](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/42)
 - [Dynamically adjust the experience of the application, based on the user's type of instrumenty](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/43)
@@ -250,4 +258,8 @@ You can contribute to the enhancement and continued development of this project.
     Thank you!!!!
     ```
 # Credits
-- TBD - CI, Mentor, Channels 
+
+There are so many fantastic people, teams and forums available to help. Such a pleasure to be in the developer's community! I want to extend a sincere thank you to the follwing in particular:
+- The Code Institute team with a very useful LMS and good advice
+- My mentor Simon @Eventyret_mentor for spot on remarks, 100% professional yet very humble approach
+- My Youtube hero @DaveGrayTeachesCode with Django courses and material

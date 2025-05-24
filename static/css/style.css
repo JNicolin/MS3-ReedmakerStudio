@@ -6,13 +6,13 @@
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
   --color-primary: #ffffffff; /* white */
-  --color-secondary:#edf4fa; /* platinum */ 
-  --color-accent-dark: #07a40a; /* darker green */ 
-  --color-accent: #01ab01; /* green */ 
+  --color-secondary:#e5f3fb; /* platinum */ 
+  --color-accent-dark: #145116; /* darker green */ 
+  --color-accent: #048a04; /* green */ 
   --color-accent-light: #90f090; /* green */ 
   --text-dark: #14213dff; /* oxford blue */
   --text-normal: #2b2d42; /* graphite */  
-  --text-light: #FCF6BD; /* light yellow */
+  --text-light: hsl(51, 77%, 88%); /* light yellow */
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     border-bottom: 0.1rem solid var(--color-accent);
     color: var(--text-normal);
 }
@@ -77,23 +77,23 @@ a:hover {
 }
 
 .btn-custom-primary {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--text-light);
-}
-.btn-custom-primary:hover {
   background-color: var(--color-accent-dark);
   border-color: var(--color-accent-dark);
   color: var(--text-light);
 }
+.btn-custom-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-accent-dark);
+  color: var(--color --color-accent-dark);
+}
 
 .btn-custom-secondary {
-    background-color: var(--color-primary);
-    border-color: var(--color-accent-dark);
-    color: var(--color --color-accent-dark);
-  }
-  .btn-custom-secondary:hover {
-    background-color: var(--color-accent-dark);
-    border-color: var(--color-accent-dark);
-    color: var(--text-light);
-  }
+  background-color: var(--color-primary);
+  border-color: var(--color-accent-dark);
+  color: var(--color --color-accent-dark);
+}
+.btn-custom-secondary:hover {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--text-light);
+}
