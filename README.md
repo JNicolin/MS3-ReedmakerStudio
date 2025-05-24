@@ -200,9 +200,54 @@ You can follow the development progress in the [GitHub Project Board](https://gi
 - TBD
 - Manual and Automated testing
 - Results and evidence
-# Deploy
+
 - TBD - deploying to Herouku
 # Known issues and Future features
+## Known issues
 - TBD - From testing and restlist
+
+## Future features
+###
+I keep a list of feature cards in my [GitHub Project Board](https://github.com/users/JNicolin/projects/8). Future features that are more or less ideas are labelled as **Ideas** in the board. This is an extract of Ideas at the time of writing this text:
+- [Filter the reed listview to see my owned reeds only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/41)
+- [Upload photos of reeds direct from a mobile camera](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/42)
+- [Dynamically adjust the experience of the application, based on the user's type of instrumenty](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/43)
+- [Reach out to community members with a request for help](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/44)
+- [Send notices to registered members at addition of blog posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/45)
+
+### Are you a developer? Fork to contribute
+You can contribute to the enhancement and continued development of this project. This will help you get started:
+
+1. **Fork this repo on [GitHub-ReedmakerStudio](https://github.com/JNicolin/MS3-ReedmakerStudio)**
+2. **Clone your fork**:
+    ```bash
+    git clone https://github.com/your-username/MS3-ReedmakerStudio.git
+    cd MS3-ReedmakerStudio
+    ```
+3. **Make sure you have Python 3.12.x installed**
+    ```bash
+    python --version
+    ``` 
+4. Create and activate a virtual environment
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ``` 
+5. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ``` 
+6. **Add a .env file with a secret key in in the root folder**
+    ```bash
+    SECRET_KEY="your secret :-)"
+    ```
+7. **start the development server**
+    ```bash
+    python3 manage.py runserver
+    ```
+8. **Create **pull requests** to suggest your changes**
+    ```
+    Thank you!!!!
+    ```
 # Credits
 - TBD - CI, Mentor, Channels 
