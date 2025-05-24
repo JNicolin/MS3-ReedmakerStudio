@@ -89,13 +89,13 @@ a:hover {
 .btn-custom-primary:hover {
   background-color: var(--color-primary);
   border-color: var(--color-accent-dark);
-  color: var(--color --color-accent-dark);
+  color: var(--color-accent-dark);
 }
 
 .btn-custom-secondary {
   background-color: var(--color-primary);
   border-color: var(--color-accent-dark);
-  color: var(--color --color-accent-dark);
+  color: var(--color-accent-dark);
 }
 .btn-custom-secondary:hover {
   background-color: var(--color-accent-dark);

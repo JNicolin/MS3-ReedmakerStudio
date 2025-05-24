@@ -79,8 +79,8 @@ Make progress as a reedmaker! Enjoy your reed story!
 <img src="static/images/design/Fonts.png" alt="Selected fonts" width="500"/>
 
 ## Color schemes
-- The colorscheme was selected with the basic color of cane and wood in mind. 
-- <img src="static/images/design/MS3_color_scheme.png" alt="Color scheme"  width="500"/> 
+- The colorscheme was selected for a clear and clean look. 
+<img src="static/images/design/MS3_color_scheme.png" alt="Color scheme"  width="500"/> 
 
 ## Wireframes
 | Start page | Login form | 
@@ -231,7 +231,7 @@ Below is a list of test cases covering the key functionality of the application,
 ## Code validation, static testing
 ### CSS, HTML and JavaScript validation
  - All CSS was validated in the W3 group validator: No remaining comments or errors
- - All HTML vwas validate in W3 group validator: No remaining comments or errors
+ - All HTML vwas validate in W3 group validator: The HTML validator does not like DTL tags. It does give warnings for this. These are the only remaining.
  - The JavaScript was run through the CI Linter app: No remaining errors
  - Chrome lighthouse testing for performance, accessibility and coding standard
 
@@ -259,7 +259,8 @@ Go to the Settings tab → Reveal Config Vars, and add:
 
 # Known issues and Future features
 ## Known issues
-- TBD - From testing and restlist
+- No remaining errors or bugs. Except for the mentioned warnings from the HTML validator on DTL tags.
+- I have spent quite some time on figuring out how to build a modular way of commenting. As I wanted to implement commenting feature for Reeds as well as for Blogposts, I wanted to learn how to develop this once and use it twice. I came to learn about the generic views from the Django framework, and that was the way to do it!
 
 ## Future features
 ###
