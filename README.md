@@ -132,17 +132,17 @@ Make progress as a reedmaker! Enjoy your reed story!
 
 The project is organized according to agile concepts with Epics grouping related Tasks. This is an overview of tasks performed to complete this project.
 
-### 🛫 Epic: Initiate environment
+### Epic: Environment configuration
 - [x] [Install packages and dependencies](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
 - [x] [Create Django project with apps: reeds, posts, comments](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/15)
 - [x] [Prepare dev and prod databases and deploys](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/8)
 
-### 👥 Epic: User Authentication & Accounts
+### Epic: User Authentication and Accounts
 - [x] [Create user login, logout and register with django-allauth](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
 - [x] [Register New Users](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
 - [x] [Style Allauth forms with Bootstrap](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/14)
 
-### 🎼 Epic: Reed Management
+### Epic: Reed management
 - [x] [Implement Reed model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/7)
 - [x] [Implement CRUD views for Reed, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
 - [x] [Create event, repertoire and instrument model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/29)
@@ -153,18 +153,18 @@ The project is organized according to agile concepts with Epics grouping related
 - [x] [Use modals to add events and repertoire from reed detail view ](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/30)
 - [x] [Limit Edit/Delete to owner only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/10)
 
-### 📰 Epic: Blog Posts
+### Epic: Blogging
 - [x] [Implement post model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/18)
 - [x] [Implement CRUD views for Post, with logged-in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/28)
 - [x] [Use modal to add posts from Post detail view](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/32)
 - [x] [Implement responsive cards for Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/6)
 
-### 📝 Epic: Reusable Comments for Reeds and Posts
+### Epic: Reusable comments for reeds and posts
 - [x] [Implement Comment model & forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/18)
 - [x] [Connect Comment model generically to both Post and Reed](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/19)
 - [x] [Create CRUD views for Comments, with logged in logic](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/17)
 
-### 🎨 Epic: UI & Styling
+### Epic: UI and Styling
 - [x] [Design `base.html` with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/20)
 - [x] [Design modular '_component.html' with Bootstrap layout](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/21)
 - [x] [Ensure responsive Navbar with login/logout/register buttons](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/34)
@@ -174,11 +174,11 @@ The project is organized according to agile concepts with Epics grouping related
 - [x] [Ensure responsiveness for all key templates](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/35)
 - [x] [Add crispy-forms for all forms](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/22)
 
-### 🥸 Epic: Administration panel
+### Epic: Administration panel
 - [x] [Register models with Django administration](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/9)
 - [x] [Ensure all administration tasks are accessible as superuser](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/5)
 
-### 🧪 Epic: Testing & Deployment
+### Epic: Testing and Deployment
 - [x] [Manual testing for responsiveness](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/23)
 - [x] [Write tests for Reeds and Posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/24)
 - [x] [Deploy to Heroku](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/39)
@@ -187,12 +187,12 @@ The project is organized according to agile concepts with Epics grouping related
 
 ---
 
-🔗 Du hittar alla öppna och stängda issues här: [Issue Tracker](https://github.com/JNicolin/MS3-ReedmakerStudio/issues)
+🔗 All opened and closed issues for this project can be found here: [Issue Tracker](https://github.com/JNicolin/MS3-ReedmakerStudio/issues)
 
 ## Kanban to visualize and follow progress
 ### Project Board
 
-You can follow the development progress in the [GitHub Project Board](https://github.com/users/JNicolin/projects/8)
+This board allows to the development progress in the [GitHub Project Board](https://github.com/users/JNicolin/projects/8)
 
 [![Project Board Screenshot](static/images/project/Kanban.png)](https://github.com/users/JNicolin/projects/8) 
 
@@ -257,25 +257,25 @@ Go to the Settings tab → Reveal Config Vars, and add:
 ## Known issues
 - TBD - From testing and restlist
 
-## 💡 Future features
+## Future features
 ###
-I keep a list of feature cards in my [GitHub Project Board](https://github.com/users/JNicolin/projects/8). Future features that are more or less ideas are labelled as **Enhancement** in the board. This is an extract of Ideas at the time of writing this text:
+I keep a list of feature cards in my [GitHub Project Board](https://github.com/users/JNicolin/projects/8). Future features are labelled as **Enhancement** in the board. Below is an extract of Ideas at the time of writing this text:
 - [Filter the reed listview to see my owned reeds only](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/41)
 - [Upload photos of reeds direct from a mobile camera](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/42)
 - [Dynamically adjust the experience of the application, based on the user's type of instrumenty](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/43)
 - [Reach out to community members with a request for help](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/44)
 - [Send notices to registered members at addition of blog posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/45)
 
-### Are you a developer? Fork to contribute
-You can contribute to the enhancement and continued development of this project. This will help you get started:
+### Are you a developer? Then Fork to contribute
+You can contribute to the enhancement and continued development of this project. This guide will help you get started:
 
 1. **Fork this repo on [GitHub-ReedmakerStudio](https://github.com/JNicolin/MS3-ReedmakerStudio)**
-2. **Clone your fork**:
+2. **Clone the forked repo**:
     ```bash
     git clone https://github.com/your-username/MS3-ReedmakerStudio.git
     cd MS3-ReedmakerStudio
     ```
-3. **Make sure you have Python 3.12.x installed**
+3. **Make sure that Python 3.12.x is installed**
     ```bash
     python --version
     ``` 
@@ -288,21 +288,22 @@ You can contribute to the enhancement and continued development of this project.
     ```bash
     pip install -r requirements.txt
     ``` 
-6. **Add a .env file with a secret key in in the root folder**
+6. **Add a .env file with a secret key in the root folder**
     ```bash
     SECRET_KEY="your secret :-)"
     ```
-7. **start the development server**
+7. **Start the development server to validate set-up**
     ```bash
     python3 manage.py runserver
     ```
-8. **Create **pull requests** to suggest your changes**
+8. **Create pull requests to suggest your changes**
     ```
     Thank you!!!!
     ```
 # Credits
 
-There are so many fantastic people, teams and forums available to help. Such a pleasure to be in the developer's community! I want to extend a sincere thank you to the follwing in particular:
+There are so many fantastic people, teams and forums available to help in the developer's community! I want to extend a sincere thank you to the follwing stars in particular:
 - The Code Institute team with a very useful LMS and good advice
+- Kay @Kay_ci from Code Institute for keeping up contact and pushing me onwards
 - My mentor Simon @Eventyret_mentor for spot on remarks, 100% professional yet very humble approach
-- My Youtube hero @DaveGrayTeachesCode with Django courses and material
+- My new Youtube hero @DaveGrayTeachesCode with Django courses and material
