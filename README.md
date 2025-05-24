@@ -97,7 +97,7 @@ But that’s not all — Reedmaker Studio also enables you to:
 <img src="static/images/design/Fonts.png" alt="Selected fonts" width="500"/>
 
 ## Color schemes
-- The colorscheme was selected for a clear and clean look. 
+- The colorscheme was selected for a clear and clean look.<br> 
 <img src="static/images/design/MS3_color_scheme.png" alt="Color scheme"  width="500"/> 
 
 ## Wireframes
