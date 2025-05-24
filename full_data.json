@@ -1,0 +1,1082 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-05-24T17:57:04.329Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Chrismtas concert, Uppsala",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-05-24T17:57:32.066Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Symphony 3, Beethoven",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-05-24T17:58:04.088Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Jingle bells, Adam Smith",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-05-24T17:59:49.272Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "1A, ob, 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"Nice specs by johannicolin\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-05-24T18:00:14.768Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Christmas concert, Uppsala",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Gig title\", \"Reed\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-05-24T18:00:22.190Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Jingle bells, Adam Smith",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Reed\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-05-24T18:00:26.331Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Symphony 3, Beethoven",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Reed\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 5,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 5,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 5,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 5,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add email address",
+    "content_type": 6,
+    "codename": "add_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change email address",
+    "content_type": 6,
+    "codename": "change_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete email address",
+    "content_type": 6,
+    "codename": "delete_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view email address",
+    "content_type": 6,
+    "codename": "view_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add email confirmation",
+    "content_type": 7,
+    "codename": "add_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change email confirmation",
+    "content_type": 7,
+    "codename": "change_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete email confirmation",
+    "content_type": 7,
+    "codename": "delete_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view email confirmation",
+    "content_type": 7,
+    "codename": "view_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 8,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 8,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 8,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 8,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 9,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 9,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 9,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 9,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 10,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 10,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 10,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 10,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add reed",
+    "content_type": 11,
+    "codename": "add_reed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change reed",
+    "content_type": 11,
+    "codename": "change_reed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete reed",
+    "content_type": 11,
+    "codename": "delete_reed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view reed",
+    "content_type": 11,
+    "codename": "view_reed"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add event",
+    "content_type": 12,
+    "codename": "add_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change event",
+    "content_type": 12,
+    "codename": "change_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete event",
+    "content_type": 12,
+    "codename": "delete_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view event",
+    "content_type": 12,
+    "codename": "view_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add repertoire",
+    "content_type": 13,
+    "codename": "add_repertoire"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change repertoire",
+    "content_type": 13,
+    "codename": "change_repertoire"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete repertoire",
+    "content_type": 13,
+    "codename": "delete_repertoire"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view repertoire",
+    "content_type": 13,
+    "codename": "view_repertoire"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 14,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 14,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 14,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 14,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$8Wu4dFuV2f1tYIRKJeHpSO$EQsNM8tNkQbbeTRxGnBb4b+Bf6CARcJ8W1XvdLlTX8k=",
+    "last_login": "2025-05-24T17:56:07.795Z",
+    "is_superuser": true,
+    "username": "johannicolin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-24T17:35:11.089Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Lo3VOY6G7W5ZTYir6F5iNl$Uw6isghH6PPT9iPl1Y92xBsG21v25XN5RAE+oRqA2/I=",
+    "last_login": "2025-05-24T17:47:30.188Z",
+    "is_superuser": false,
+    "username": "Anders_Clarinet",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-24T17:47:30.049Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$VzuZCC2zjYMkQMs5jq3ELP$8yLzL1zBSwkKd1kMm7Vycnw+HDSluWFRZA7tOTiXH+E=",
+    "last_login": "2025-05-24T17:54:18.177Z",
+    "is_superuser": false,
+    "username": "Sara_Bassoon",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-24T17:51:47.938Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$UxpUxo7IpSowHTSmIbjq1z$oR/85uEZTxqCQ59txg7CeHHYvInHcGfq1UapZ1fBD/w=",
+    "last_login": "2025-05-24T17:52:22.297Z",
+    "is_superuser": false,
+    "username": "Eva_Oboe",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-24T17:52:22.171Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "posts",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "reeds",
+    "model": "reed"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "reeds",
+    "model": "event"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "reeds",
+    "model": "repertoire"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "comments",
+    "model": "comment"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fq36v6tlrt925792vy80r44ftek7htt5",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pBCO4W6dO8ZyDAzSNVAUtqV8e7apAvd_vfef6mA25rD1mQJM6uzMur0u0Wkh5Qd8B3LrWqqZV3mqHdFH7Tpa2V5Xg737yBjy9_aik8egQeyI0Ia0UyTQwEGAPLJ9RQB2MHAMXXi-l6gMyycLEVD0an3B_nPOMw:1uIt6N:iZTePl2CNbCVQqbSXGS3C8PnqYvCxVw39gOiOiJaODU",
+    "expire_date": "2025-06-07T17:56:07.796Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "How cane selection influences reed quality",
+    "slug": "how-cane-selection-influences-reed-quality",
+    "body": "Choosing the right cane is arguably the most foundational step in reedmaking. The diameter, wall thickness, and fiber density all directly affect how a reed will respond and sound. Even for experienced reedmakers, the wrong cane can result in hours of wasted work.\r\n\r\nCane that is too soft can cause instability in pitch and poor projection, while cane that is too hard often leads to resistance and a dull tone. Each batch, and even each tube, should be evaluated individually. Simple tests such as flexing and tapping can help assess the cane’s acoustic potential.\r\n\r\nThe region and climate in which the cane was grown also play a major role. Mediterranean cane from Var or Frejus in France is known for its consistency, while some Asian canes are less reliable but can still yield great results when carefully selected.\r\n\r\nUltimately, successful reedmakers develop a feel for cane over time. Recording batch numbers and characteristics can aid future selection and ensure quality control.",
+    "excerpt": "",
+    "author": 1,
+    "created_on": "2025-05-24T17:37:17.658Z",
+    "updated_on": "2025-05-24T17:37:17.658Z",
+    "status": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": {
+    "title": "Profiling reeds using machines",
+    "slug": "Profiling-reeds-using-machines",
+    "body": "The introduction of profiling machines like the ReedCube has brought a new level of precision and consistency to reedmaking. With proper setup, profiling can drastically reduce the time needed to reach a playable reed.\r\n\r\nMachines can shape both the contour and thickness of the cane with repeatable results. This is particularly useful for reedmakers who need to maintain consistency across multiple reeds for professional use or ensemble playing.\r\n\r\nDespite the benefits, profiling does not eliminate the need for hand adjustment. Fine scraping and balancing are still required to tailor the reed to your playing style and instrument.\r\n\r\nA good approach is to profile just shy of your final measurements, allowing room for personal adjustments. Always check for symmetry and avoid over-reliance on the machine.\r\n\r\nProfiling machines are a tool, not a replacement for skill. They accelerate the process but cannot fully replace the nuanced decision-making of an experienced reedmaker.",
+    "excerpt": "",
+    "author": 1,
+    "created_on": "2025-05-24T17:41:47.792Z",
+    "updated_on": "2025-05-24T17:41:47.792Z",
+    "status": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "Where the best cane grows – A global view",
+    "slug": "where-the-best-cane-grows",
+    "body": "Arundo donax, the plant used for most double reeds, grows in warm, sunny climates near water sources. The best cane is often found in specific regions where climate and soil composition create ideal conditions.\r\n\r\nThe southern coast of France, especially around the Var and Frejus regions, has long been considered the gold standard for oboe and bassoon cane. The combination of sun exposure, humidity, and mineral-rich soil results in cane with great strength and flexibility.\r\n\r\nOther significant sources include Spain, Italy, and select parts of China. Each location yields cane with unique qualities, and many reedmakers develop preferences based on tonal goals.\r\n\r\nHarvesting methods and drying processes further affect the quality. Cane should be aged at least two years for stability and strength.\r\n\r\nUnderstanding the origin of your cane and how it was processed helps make informed decisions in your reedmaking journey.",
+    "excerpt": "",
+    "author": 1,
+    "created_on": "2025-05-24T17:42:37.092Z",
+    "updated_on": "2025-05-24T17:42:37.092Z",
+    "status": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "title": "Oboe staples and their impact on tone",
+    "slug": "oboe-staples-and-their-impact-on-tone",
+    "body": "The staple acts as the backbone of the oboe reed, and its dimensions and material significantly influence the final sound. Length, bore shape, and wall thickness can either support or hinder vibration.\r\n\r\nA narrower bore tends to create a more focused and compact tone, while a wider bore can produce a fuller, darker sound. Some staples emphasize projection, while others prioritize warmth.\r\n\r\nMaterial choice is also important. Brass is common and produces a clear, bright sound. Silver or nickel-plated options tend to enhance overtones and responsiveness.\r\n\r\nMatching the staple to both the instrument and the cane is essential. A great reed on the wrong staple can feel unbalanced or unstable.\r\n\r\nIt’s a good idea to experiment with several models and record how they interact with your scraping style and setup.",
+    "excerpt": "",
+    "author": 1,
+    "created_on": "2025-05-24T17:43:41.142Z",
+    "updated_on": "2025-05-24T17:43:41.142Z",
+    "status": 1
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 5,
+  "fields": {
+    "title": "Maintaining your reed tools: Focus on knife care",
+    "slug": "maintaining-your-reed-tools",
+    "body": "A dull reed knife is one of the fastest ways to ruin a good piece of cane. Proper maintenance and sharpening of your tools ensures not only efficiency but also consistency in your reeds.\r\n\r\nYour knife should be stropped regularly on leather with polishing compound to keep the edge keen. Sharpening stones, from coarse to ultra-fine, should be used only when the edge begins to dull noticeably.\r\n\r\nTechnique is key—maintaining the correct angle while sharpening avoids uneven bevels. Consistent pressure and attention to symmetry matter.\r\n\r\nBeyond sharpening, always clean and dry your tools after use. Store knives in protective cases to prevent nicks or rust.\r\n\r\nHigh-quality tools are an investment. Treat them accordingly, and they will reward you with years of precise reedmaking.",
+    "excerpt": "",
+    "author": 1,
+    "created_on": "2025-05-24T17:44:38.958Z",
+    "updated_on": "2025-05-24T17:44:38.958Z",
+    "status": 1
+  }
+},
+{
+  "model": "reeds.reed",
+  "pk": 1,
+  "fields": {
+    "item_id": "1A",
+    "item_visibility": 1,
+    "item_comment": "Nice sound",
+    "item_type": "ob",
+    "item_creator": 4,
+    "item_rating": 2,
+    "descr_resistance": 1,
+    "descr_sound": 2,
+    "descr_response": 1,
+    "descr_length": 72.0,
+    "staple_model": "RC12",
+    "staple_length": 47.0,
+    "staple_material": "Brass",
+    "cane_gauge_thickness": 58.0,
+    "cane_shaper_form": "Mayer",
+    "cane_supplier": "Rigotti",
+    "created_on": "2025-05-24T17:59:49.271Z",
+    "updated_on": "2025-05-24T17:59:49.271Z"
+  }
+},
+{
+  "model": "reeds.event",
+  "pk": 1,
+  "fields": {
+    "gig_title": "Christmas concert",
+    "gig_description": "St Matteus X-mas concert 2024",
+    "gig_date": "2024-12-15",
+    "gig_location": "Uppsala",
+    "reed": 1,
+    "created_on": "2025-05-24T17:57:04.328Z",
+    "updated_on": "2025-05-24T18:00:14.767Z"
+  }
+},
+{
+  "model": "reeds.repertoire",
+  "pk": 1,
+  "fields": {
+    "music_title": "Symphony 3",
+    "music_composer": "Beethoven",
+    "music_genre": "Classic",
+    "reed": 1,
+    "created_on": "2025-05-24T17:57:32.065Z",
+    "updated_on": "2025-05-24T18:00:26.330Z"
+  }
+},
+{
+  "model": "reeds.repertoire",
+  "pk": 2,
+  "fields": {
+    "music_title": "Jingle bells",
+    "music_composer": "Adam Smith",
+    "music_genre": "Popular classic",
+    "reed": 1,
+    "created_on": "2025-05-24T17:58:04.087Z",
+    "updated_on": "2025-05-24T18:00:22.189Z"
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 1,
+  "fields": {
+    "title": "Sharp edge",
+    "body": "Yes to all of this. I ruined so many reeds before learning to strop properly. Protecting your blade is key.",
+    "author": 2,
+    "created_on": "2025-05-24T17:48:14.891Z",
+    "updated_on": "2025-05-24T17:48:14.891Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 2,
+  "fields": {
+    "title": "Is it the staple?",
+    "body": "I tried three different staples and noticed zero difference. Maybe it’s more about the reed shape and scrape?",
+    "author": 2,
+    "created_on": "2025-05-24T17:49:14.024Z",
+    "updated_on": "2025-05-24T17:49:14.024Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 3,
+  "fields": {
+    "title": "Var cane is great",
+    "body": "I’ve had great luck with Var cane – the consistency really shows when playing long concerts. Great overview!",
+    "author": 2,
+    "created_on": "2025-05-24T17:49:57.723Z",
+    "updated_on": "2025-05-24T17:49:57.723Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 4,
+  "fields": {
+    "title": "I am an artist!",
+    "body": "I feel like profiling removes the artistic element. I prefer full hand scraping so I stay in touch with the material.",
+    "author": 2,
+    "created_on": "2025-05-24T17:50:20.324Z",
+    "updated_on": "2025-05-24T17:50:20.324Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 5,
+  "fields": {
+    "title": "Cane hardness is the key",
+    "body": "Totally agree! Cane hardness has made or broken so many of my reeds. I always check fiber density now before I even start cutting.",
+    "author": 2,
+    "created_on": "2025-05-24T17:50:56.856Z",
+    "updated_on": "2025-05-24T17:50:56.856Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 6,
+  "fields": {
+    "title": "Lazy scraper",
+    "body": "Honestly I use a cheap knife and barely sharpen it – still get good reeds. Maybe I’m just lucky?",
+    "author": 4,
+    "created_on": "2025-05-24T17:52:49.289Z",
+    "updated_on": "2025-05-24T17:52:49.289Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 5
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 7,
+  "fields": {
+    "title": "Oboe nerd",
+    "body": "Spot on. I switched from brass to silver staples and my tone opened up immediately. Love these kinds of posts.",
+    "author": 4,
+    "created_on": "2025-05-24T17:53:18.006Z",
+    "updated_on": "2025-05-24T17:53:18.006Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 4
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 8,
+  "fields": {
+    "title": "Chinese cane",
+    "body": "I get decent results from Chinese cane. I think drying and selection matter more than geography these days.",
+    "author": 4,
+    "created_on": "2025-05-24T17:53:43.503Z",
+    "updated_on": "2025-05-24T17:53:43.503Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 3
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 9,
+  "fields": {
+    "title": "Timesaver",
+    "body": "Using a profiler has saved me hours. You’re right – it doesn’t replace skill, but it gives you a strong foundation.",
+    "author": 3,
+    "created_on": "2025-05-24T17:54:47.479Z",
+    "updated_on": "2025-05-24T17:54:47.479Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 10,
+  "fields": {
+    "title": "Scrape is more important",
+    "body": "I’m not convinced cane origin matters that much. I’ve made great reeds from cheap batches as long as I adjusted my scrape.",
+    "author": 3,
+    "created_on": "2025-05-24T17:55:23.648Z",
+    "updated_on": "2025-05-24T17:55:23.648Z",
+    "approved": false,
+    "content_type": 10,
+    "object_id": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 11,
+  "fields": {
+    "title": "Nice specs",
+    "body": "I like this specification myself",
+    "author": 1,
+    "created_on": "2025-05-24T17:59:49.272Z",
+    "updated_on": "2025-05-24T17:59:49.272Z",
+    "approved": false,
+    "content_type": 11,
+    "object_id": 1
+  }
+}
+]

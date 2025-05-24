@@ -4,40 +4,120 @@
 {% load static %}
 
 <header id="header" class="container section">
-    <div class="row align-items-start mb-5">
+    <div class="row align-items-center mb-5">
         <div class="col-12 col-xl-6 text-center text-lg-start">
-            <h1 class="display-4">Reedmaker's studio</h1>
-            <p class="lead display-8"><strong>For you who knows that reedmaking is an art!</strong></p>
-            <p> 
-                Use this application to post a digital record of your reeds. Save data about your reed in physical measures, playing characteristics, when it was used and for what repertoire. "My reed story" will be there forever to help you learn from past experiences and to identify reed preferences. Use this application to post articles about the reedmaking process and comments about other musicians reeds and articles. </em>
+            <h1 class="display-4">Welcome to Reedmaker Studio</h1>
+            <p>
+                <strong>Reedmaker Studio</strong> is your digital companion in the art of reedmaking — a place to log, reflect on, and share your reed journey. Whether you play oboe, bassoon, or clarinet, your reed history belongs here.
+            </p>
+            <p>
+                Register details about each reed you craft — materials, dimensions, tone, and performance context. Over time, patterns emerge that help you understand what works best for your playing.
+            </p>
+            <p>
+                More than a logbook, Reedmaker Studio is a community hub for blog posts, insights, and feedback from fellow musicians.
+            </p>
+            <p>
+                Join others using digital tools to grow as reedmakers. Your story starts here.
             </p>
         </div>
         <div class="col-12 col-xl-6">
-            <img src="{% static 'images/content/reedcase_1280.jpg' %}"
+            <img src="{% static 'images/content/reedcase_640.jpg' %}"
             alt="Image illustrating a reed"
             class="img-fluid w-100 object-fit-cover"
-            style="max-height: 300px;"> 
+            style="max-height: 400px;"> 
         </div>
     </div>
 </header>
+
+<!-- Motivation sections -->
+<section class="container my-5">
+    <h2 class="display-6 text-center mb-4">The challenge of reedmaking</h2>
+    <p>
+      Reedmaking is one of the most time-consuming aspects of playing a reed instrument.  
+      We spend hours shaping, scraping, testing, adjusting — often for a single performance. Mastering the skill takes years, and even experienced musicians face frustration and unpredictability.
+    </p>
+    <p>
+      What makes a reed “good” can be deeply personal: the right response, the perfect resistance, the flexibility under dynamic changes. And just when you think you’ve cracked the code, the weather changes or your embouchure shifts.
+    </p>
+    <p>
+      <strong>Reedmaker Studio</strong> exists to support this complex journey. By documenting your reeds and sharing experiences with fellow musicians, you open the door to insights that would take years to discover on your own.
+    </p>
+    <p>
+      This platform turns the trial-and-error of reedmaking into a learning process you don’t have to face alone.
+    </p>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="display-6 text-center mb-4">Why save your reeds?</h2>
+    <blockquote class="blockquote text-center px-4 py-4 bg-light border-start border-4 rounded">
+        <p class="fs-4 fst-italic text-muted mb-0">
+          “This reed played beautifully for the Mahler 5 solo — warm low notes and excellent projection.”
+        </p>
+        <footer class="blockquote-footer text-center mt-2">
+          Logged on May 3rd, 2025
+        </footer>
+      </blockquote>
+    <p>
+      We dedicate so much time to crafting reeds — why not preserve what we learn from each one?
+    </p>
+    <p>
+      Imagine being able to look back at a reed that worked brilliantly for a Bach cantata or a Mahler symphony. Knowing what cane you used, how it was shaped, how it sounded, and what repertoire it served. Over time, patterns emerge. You begin to see what materials and dimensions truly suit your playing style.
+    </p>
+    <p>
+      <strong>Reedmaker Studio</strong> helps you capture this information in a structured way, so that your work isn’t lost to memory or discarded with the reed itself.
+    </p>
+    <p>
+      By logging your reeds, you create a personal archive of preferences and performance. It’s not just about improving your next reed — it’s about understanding your voice as a musician.
+    </p>
+  </section>
+
+  <!-- Carousel with the three most recent posts  -->
+  <section class="container my-5">
+    <h2 class="display-6 text-center mb-4">Latest from the Blog</h2>
+    <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for post in posts|slice:":3" %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.excerpt|default:post.body|truncatechars:200 }}</p>
+                <a href="{% url 'post_detail' post.pk %}" class="btn btn-custom-secondary">Read more</a>
+              </div>
+              <div class="card-footer text-muted">
+                Posted by {{ post.author }} on {{ post.created_on|date:"Y-m-d" }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
 
 <!-- Services section -->
 <section id="services" class="container section mb-3">
     <div class="row g-3 justify-content-center">
         <div class="col-12 text-center">
-            <h2 class="display-6">What you can expect from Reedmaker Studio</h2>
+            <h2 class="display-6">Services for reedmakers</h2>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
             <div class="card h-100">
+                <img src="{% static 'images/content/reedcase_wood.jpg' %}" class="card-img-top service-img" alt="Reed case">
                 <div class="card-header">
-                    <h3 class="display-7 mb-0">Build your digital reedcase</h3>
+                    <h3 class="display-7 mb-0">Grow your digital reedcase</h3>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">
-                        You can register your precious reeds with us and keep a log of your achievements. Use the service to save datga aboput your reeds. Everything from material, characteristics of playing to what events they were used at and for what repertoire. 
+                    <p>
+                        Document your reeds in a structured and meaningful way. With Reedmaker Studio, you can log materials, physical dimensions, playing characteristics, and how each reed performed in concerts or rehearsals.
                     </p>
-                    <p class="card-text">
-                        Save your data and choose to share it with fellow musicians to get feedback and tips from the community. 
+                    <p>
+                        Over time, you’ll build a personal archive of reedmaking experiences — a digital reedcase you can learn from, reflect on, and even share with fellow musicians for advice and feedback.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -47,15 +127,16 @@
         </div>
         <div class="col-12 col-md-6 col-lg-6">
             <div class="card h-100">
+                <img src="{% static 'images/content/blogging.jpg' %}" class="card-img-top service-img" alt="Blogging">
                 <div class="card-header">
-                    <h3 class="display-7 mb-0 sub-heading-color">Blog about reedmaking</h3>
+                    <h3 class="display-7 mb-0">Blog about reedmaking</h3>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">
-                        Reedmaking takes practice and inspiration to progress. Blogging about reedmaking, reading articles and posting comments is a way to fastforward into becoming a professional.
+                    <p>
+                        Reedmaking is both a craft and a journey. By writing blog posts, you can reflect on your process, share insights, and inspire others. Whether you're troubleshooting a tricky scrape or reviewing a new shaper tip — your experiences matter.
                     </p>
-                    <p class="card-text">
-                        Share your insights and knowledge with the community, or add a post to help a collegue out. 
+                    <p>
+                        The blog is your space to document, discuss, and connect. Contribute your voice and help build a growing community of reedmakers learning together.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -65,4 +146,17 @@
         </div>            
     </div>
 </section>
+
+<!-- Call to action -->
+<section class="container my-5 text-center">
+    <h2 class="display-6 mb-3">Join the Reedmaker Community</h2>
+    <p>
+      Whether you're just starting or a seasoned pro, your reeds deserve to be remembered, studied, and shared.
+    </p>
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="{% url 'account_signup' %}" class="btn btn-lg btn-custom-primary">Create your account</a>
+      <a href="{% url 'post_list' %}" class="btn btn-lg btn-custom-secondary">Read blog posts</a>
+    </div>
+  </section>
+
 {% endblock %}

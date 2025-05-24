@@ -5,10 +5,6 @@ from .choices import Rating, Instrument
 from .forms import ReedForm, EventForm, RepertoireForm
 from comments.forms import CommentForm
 
-# Route for the home view
-def home(request):
-    return render(request, 'home.html')
-
 ## CRUD views for Reed
 
 # READ: List

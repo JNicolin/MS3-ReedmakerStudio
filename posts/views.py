@@ -4,7 +4,12 @@ from .models import Post
 from .forms import PostForm
 from comments.forms import CommentForm
 
-# READ: List
+# Route for home page html
+def home(request):
+    posts = Post.objects.filter(status=1).order_by("-created_on")
+    return render(request, "home.html", {"posts": posts})
+
+# READ: List posts
 def post_list(request):
     posts = Post.objects.filter(status=1).order_by('-created_on')
 
@@ -23,7 +28,7 @@ def post_list(request):
         "form": form,
     })
 
-# READ: Detail with comments
+# READ: Detail a post, with comments
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = post.comments.all()
@@ -48,7 +53,7 @@ def post_detail(request, pk):
         'form': form,
     })
 
-# CREATE
+# CREATE a post, autosave the current user as owner
 @login_required
 def post_create(request):
     form = PostForm(request.POST or None)
@@ -59,7 +64,7 @@ def post_create(request):
         return redirect('post_list')
     return render(request, 'posts/post_form.html', {'form': form})
 
-# UPDATE
+# UPDATE a post, if the user is the owner
 @login_required
 def post_update(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -72,7 +77,7 @@ def post_update(request, pk):
         return redirect('post_detail', pk=pk)
     return render(request, 'posts/post_form.html', {'form': form})
 
-# DELETE
+# DELETE a post, if the user is the owner
 @login_required
 def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import include, path
-from reeds.views import home
+from posts.views import home
 
 urlpatterns = [
     # Application views

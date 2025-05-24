@@ -7,7 +7,7 @@ Musicians playing instruments with a reed spend a lot of time obsessing over whi
 
 | Double blade reeds | Single blade reeds |
 | --------- | ---------|
-|<img src="static/images/content/reedcase_1280.jpg" alt="Oboe reedcase"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds"/>| 
+|<img src="static/images/content/reedcase_640.jpg" alt="Oboe reedcase"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds"/>| 
 
 A common challenge is to recall which reed has what characteristics and would be the perfect match for an upcoming concert or gig. 
 
@@ -121,6 +121,7 @@ Make progress as a reedmaker! Enjoy your reed story!
 - [Coolors](https://coolors.co/) for the color scheme
 - [Font awesome](https://fontawesome.com/) for the set of fonts
 - [Pixabay](https://pixabay.com/) and [Unsplash](https://unsplash.com/) for royalty free images
+- [Tinypng](https://tinypng.com/) to compress photos and images
 ### Test
 - [Responsively App](https://responsively.app/) for testing responsiveness
 - Chrome Lighthouse

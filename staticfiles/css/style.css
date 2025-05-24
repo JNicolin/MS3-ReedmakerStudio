@@ -60,6 +60,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.service-img {
+  height: 250px; 
+  object-fit: cover;
+  width: 100%;
+}
+
 .copyright {
   color: var(--color-accent);
 }
@@ -68,7 +74,6 @@ a:hover {
   background-color: var(--color-primary);
   border: 1px solid var(--text-normal);
 }
-
 
 .modal {
   background-color: var(--color-secondary);
