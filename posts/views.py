@@ -28,7 +28,7 @@ def post_list(request):
         "form": form,
     })
 
-# READ: Detail a post, with comments
+# READ: Read detail of a post, or add a comment
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     comments = post.comments.all()
@@ -62,7 +62,11 @@ def post_create(request):
         post.author = request.user 
         post.save()
         return redirect('post_list')
-    return render(request, 'posts/post_form.html', {'form': form})
+    return render(request, 'components/_object_form.html', {
+        "form": form,
+        "title": "Add a blog post",
+        "cancel_url": reverse("reed_list")
+    })
 
 # UPDATE a post, if the user is the owner
 @login_required
@@ -75,7 +79,11 @@ def post_update(request, pk):
     if form.is_valid():
         form.save()
         return redirect('post_detail', pk=pk)
-    return render(request, 'posts/post_form.html', {'form': form})
+    return render(request, 'components/_object_form.html', {
+        "form": form,
+        "title": "Update a blog post",
+        "cancel_url": reverse("reed_list")
+    })
 
 # DELETE a post, if the user is the owner
 @login_required

@@ -27,35 +27,36 @@ def reed_list(request):
         "selected_sort": selected_sort,
     })
 
-# READ: Detail
+# READ: Read details about a reed, or add a comment/event/repertoire
 def reed_detail(request, pk):
     reed = get_object_or_404(Reed, pk=pk)
     comments = reed.comments.all()
     events = reed.targeted_gigs.all()
     repertoire = reed.repertoire_list.all()
 
-    form = CommentForm()
+    comment_form = CommentForm()
     event_form = EventForm(initial={'reed': reed})
     repertoire_form = RepertoireForm(initial={'reed': reed})
 
     # POST request
     if request.method == "POST":
         if request.user.is_authenticated:
+            # add a comment
             if 'submit_comment' in request.POST:
-                form = CommentForm(request.POST)
+                comment_form = CommentForm(request.POST)
                 if form.is_valid():
-                    comment = form.save(commit=False)
+                    comment = comment_form.save(commit=False)
                     comment.author = request.user
                     comment.content_object = reed
                     comment.save()
                     return redirect('reed_detail', pk=pk)
-
+            # add an event
             elif 'submit_event' in request.POST:
                 event_form = EventForm(request.POST)
                 if event_form.is_valid():
                     event_form.save()
                     return redirect('reed_detail', pk=pk)
-
+            # add a repertoire
             elif 'submit_repertoire' in request.POST:
                 repertoire_form = RepertoireForm(request.POST)
                 if repertoire_form.is_valid():
@@ -63,19 +64,18 @@ def reed_detail(request, pk):
                     return redirect('reed_detail', pk=pk)
         else:
             return redirect('account_login')
-
     # GET request
     return render(request, 'reeds/reed_detail.html', {
         'reed': reed,
         'comments': comments,
-        'form': form,
+        'form': comment_form,
         'events': events,
         'repertoire': repertoire,
         'event_form': event_form,
         'repertoire_form': repertoire_form,
     })
 
-# CREATE
+# CREATE a new reed
 @login_required
 def reed_create(request):
     form = ReedForm(request.POST or None)
@@ -84,7 +84,11 @@ def reed_create(request):
         reed.item_creator = request.user 
         reed.save()
         return redirect('reed_list')
-    return render(request, 'reeds/reed_form.html', {'form': form})
+    return render(request, 'components/object_form.html', {
+        "comment_form": form,
+        "title": "Create Reed",
+        "cancel_url": reverse("reed_list")
+})
 
 # UPDATE
 @login_required
@@ -97,7 +101,11 @@ def reed_update(request, pk):
     if form.is_valid():
         form.save()
         return redirect('reed_detail', pk=pk)
-    return render(request, 'reeds/reed_form.html', {'form': form})
+    return render(request, 'components/object_form.html', {
+        "form": form,
+        "title": "Update Reed "+reed.id,
+        "cancel_url": reverse("reed_list")
+})
 
 # DELETE
 @login_required
