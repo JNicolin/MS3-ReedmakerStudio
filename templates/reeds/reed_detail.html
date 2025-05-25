@@ -104,8 +104,8 @@
           </ul>
         </div>
         <div class="card-footer">
-          <!-- Button to open modal to add repertoire -->
-          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#repertoireModal">➕ Add Repertoire</button>
+          <!-- Button to open form to add repertoire -->
+          <a href="{% url 'repertoire_create' reed.pk %}" class="btn btn-custom-secondary">Add Repertoire</a>
         </div>
       </div>
     </div>
@@ -127,96 +127,20 @@
           </ul>
         </div>
         <div class="card-footer">
-          <!-- Button to open modal to add an event -->
-          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#eventModal">➕ Add Event</button>
+          <!-- Button to open form to add an event -->
+          <a href="{% url 'event_create' reed.pk %}" class="btn btn-custom-secondary">Add Event</a>
         </div>
       </div>
     </div>
   </div>
-
-  {% if user == post.author %}
-  <div class="row mb-4">
-    <div class="col-12 text-end">
-      <a href="{% url 'reed_update' post.pk %}" class="btn btn-primary me-2">Edit</a>
-      <a href="{% url 'reed_delete' post.pk %}" class="btn btn-danger">Delete</a>
-    </div>
-  </div>
-  {% endif %}
+  
   <!-- All related comments -->
-  {% include 'components/_comments.html' %}
+  {% include 'components/_comments.html' with object=reed comments=comments content_type_id=reed.get_content_type_id %}
+  
   <!-- Navigate back to reed list -->
   <div class="col-12 text-center">
-    <a href="{% url 'reed_list' %}" class="btn btn-custom-secondary">Back to reed list</a>
+    <a href="{% url 'reed_list' %}" class="btn btn-custom-primary">Quit</a>
   </div>  
-
-
-
 </section>
-
-<!-- Modal for adding an Event -->
-<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <form method="post">
-      {% csrf_token %}
-      <input type="hidden" name="submit_event" value="1">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="eventModalLabel">Add Event</h5>
-          <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {{ event_form|crispy }}
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-custom-primary">Save Event</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- Modal for adding repertoire -->
- <div class="modal fade" id="repertoireModal" tabindex="-1" aria-labelledby="repertoireModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <form method="post">
-      {% csrf_token %}
-      <input type="hidden" name="submit_repertoire" value="1">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="repertoireModalLabel">Add Repertoire</h5>
-          <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {{ repertoire_form|crispy }}
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-custom-primary">Save Repertoire</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- Modal for adding a comment -->
-<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <form method="post">
-      {% csrf_token %}
-      <input type="hidden" name="submit_comment" value="1">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
-          <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {{ comment_form|crispy }}
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-custom-primary">Post Comment</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
 
 {% endblock %}

@@ -13,7 +13,7 @@
           {{ form|crispy }}
           <button type="submit" class="btn btn-custom-primary w-100 mb-3">Save</button>
           {% if cancel_url %}
-            <a href="{{ cancel_url }}" class="btn btn-custom-secondary w-100">Quit</a>
+            <a href="{{ cancel_url|default:'#' }}" class="btn btn-custom-secondary w-100">Quit</a>
           {% endif %}
         </form>
       </div>

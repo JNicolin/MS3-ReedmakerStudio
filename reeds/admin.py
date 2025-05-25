@@ -1,10 +1,6 @@
 from django.contrib import admin
-from .models import Reed, Event, Repertoire
+from .models import Reed
 from comments.admin import CommentInline
-
-# Register your models here.
-admin.site.register(Event)
-admin.site.register(Repertoire)
 
 @admin.register(Reed)
 class ReedAdmin(admin.ModelAdmin):

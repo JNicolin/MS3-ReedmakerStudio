@@ -1,19 +1,7 @@
 from django import forms
-from .models import Reed, Event, Repertoire
+from .models import Reed
 
 class ReedForm(forms.ModelForm):
     class Meta:
         model = Reed
         exclude = ['created_on', 'updated_on']
-
-class EventForm(forms.ModelForm):
-    class Meta:
-        model = Event
-        exclude = ['created_on', 'updated_on']
-        widgets = {'reed': forms.HiddenInput()}
-
-class RepertoireForm(forms.ModelForm):
-    class Meta:
-        model = Repertoire
-        exclude = ['created_on', 'updated_on']
-        widgets = {'reed': forms.HiddenInput()}

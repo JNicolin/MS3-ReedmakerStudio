@@ -1808,7 +1808,7 @@
   }
 },
 {
-  "model": "reeds.event",
+  "model": "events.event",
   "pk": 1,
   "fields": {
     "gig_title": "Christmas concert",
@@ -1821,7 +1821,7 @@
   }
 },
 {
-  "model": "reeds.repertoire",
+  "model": "repertoire.repertoire",
   "pk": 1,
   "fields": {
     "music_title": "Symphony 3",
@@ -1833,7 +1833,7 @@
   }
 },
 {
-  "model": "reeds.repertoire",
+  "model": "repertoire.repertoire",
   "pk": 2,
   "fields": {
     "music_title": "Jingle bells",

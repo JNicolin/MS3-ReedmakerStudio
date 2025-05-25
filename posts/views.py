@@ -51,6 +51,7 @@ def post_detail(request, pk):
         'post': post,
         'comments': comments,
         'form': form,
+        'content_type_id': post.get_content_type_id()
     })
 
 # CREATE a post, autosave the current user as owner
@@ -65,7 +66,7 @@ def post_create(request):
     return render(request, 'components/_object_form.html', {
         "form": form,
         "title": "Add a blog post",
-        "cancel_url": reverse("reed_list")
+        "cancel_url": reverse("post_list")
     })
 
 # UPDATE a post, if the user is the owner
@@ -82,7 +83,7 @@ def post_update(request, pk):
     return render(request, 'components/_object_form.html', {
         "form": form,
         "title": "Update a blog post",
-        "cancel_url": reverse("reed_list")
+        "cancel_url": reverse("post_detail", args=[pk])
     })
 
 # DELETE a post, if the user is the owner

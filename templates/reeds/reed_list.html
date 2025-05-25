@@ -18,26 +18,37 @@
 <section>
   <div class="row align-items-start mb-5">
     <!-- Filter Form -->
-    <form id="reed-filter-form" method="get" class="row g-3 mb-4">
-      <div class="col-md-4">
-        <label for="instrument" class="form-label">Instrument</label>
-        <select name="instrument" id="instrument" class="form-select" onchange="this.form.submit()">
-          <option value="">All</option>
-          {% for key, label in Instrument.choices %}
-            <option value="{{ key }}" {% if selected_instrument == key %}selected{% endif %}>{{ label }}</option>
-          {% endfor %}
-        </select>
-      </div>
-      <div class="col-md-4">
-        <label for="sort" class="form-label">Sort by Rating</label>
-        <select name="sort" id="sort" class="form-select" onchange="this.form.submit()">
-          <option value="">Default</option>
-          <option value="item_rating" {% if selected_sort == "item_rating" %}selected{% endif %}>Lowest</option>
-          <option value="-item_rating" {% if selected_sort == "-item_rating" %}selected{% endif %}>Highest</option>
-        </select>
-      </div>
-      <div class="col-md-4 d-flex align-items-end">
-        <a href="{% url 'reed_list' %}" class="btn btn-custom-secondary">Clear</a>
+    <form id="reed-filter-form" method="get" class="container mb-5">
+      <div class="row g-3 align-items-end">
+        <!-- Instrument filter -->
+        <div class="col-md-3">
+          <label for="instrument" class="form-label">Instrument</label>
+          <select name="instrument" id="instrument" class="form-select" onchange="this.form.submit()">
+            <option value="">All</option>
+            {% for key, label in Instrument.choices %}
+              <option value="{{ key }}" {% if selected_instrument == key %}selected{% endif %}>{{ label }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <!-- Rating sort -->
+        <div class="col-md-3">
+          <label for="sort" class="form-label">Sort by Rating</label>
+          <select name="sort" id="sort" class="form-select" onchange="this.form.submit()">
+            <option value="">Default</option>
+            <option value="item_rating" {% if selected_sort == "item_rating" %}selected{% endif %}>Lowest</option>
+            <option value="-item_rating" {% if selected_sort == "-item_rating" %}selected{% endif %}>Highest</option>
+          </select>
+        </div>
+        <!-- Clear filters button -->
+        <div class="col-md-3">
+          <button type="submit" name="clear" value="1" class="btn btn-custom-secondary w-100">Clear</button>
+        </div>
+        <!-- Add reed button -->
+        {% if user.is_authenticated %}
+        <div class="col-md-3 text-md-end">
+          <a href="{% url 'reed_create' %}" class="btn btn-custom-primary w-100">Add reed</a>
+        </div>
+        {% endif %}
       </div>
     </form>
 
@@ -68,11 +79,6 @@
           </tbody>
         </table>
     </div>
-    {% if user.is_authenticated %}
-      <div class="col-12">
-        <a href="{% url 'reed_create' %}" class="btn btn-custom-primary mb-3">Add a new reed</a>
-      </div>
-    {% endif %}
   </div>
 </section>
 

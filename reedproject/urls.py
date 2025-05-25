@@ -8,6 +8,9 @@ urlpatterns = [
     path('', home, name='home'),
     path('blog/', include("posts.urls"), name='posts-urls'),
     path('reeds/', include("reeds.urls"), name='reeds-urls'),
+    path('events/', include('events.urls'), name='events-urls'),
+    path('repertoire/', include('repertoire.urls'), name='repertoire-urls'),
+    path('comments/', include('comments.urls'), name='comments-urls'),    
     
     # Auth views
     path('accounts/', include('allauth.urls')),

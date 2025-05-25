@@ -61,29 +61,7 @@
   {% endif %}
 
   <!-- All related comments -->
-  {% include 'components/_comments.html' %}
-
-  <!-- Modal for comment -->
-  <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <form method="post">
-        {% csrf_token %}
-        <input type="hidden" name="submit_comment" value="1">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>          
-          <div class="modal-body">
-            {{ form|crispy }}
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-custom-secondary">Post Comment</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+  {% include 'components/_comments.html' with object=post comments=comments content_type_id=post.get_content_type_id %}
 
 </section>
 {% endblock %}

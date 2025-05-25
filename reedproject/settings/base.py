@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     'posts',
     'reeds',
     'comments',
+    'events',
+    'repertoire',
     'crispy_forms',
     'crispy_bootstrap5',
 ]

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.contenttypes.fields import GenericRelation
+from django.contrib.contenttypes.models import ContentType
 from comments.models import Comment
 
 # Create your models here.
@@ -22,3 +23,6 @@ class Post(models.Model):
         ordering = ["-created_on"]
     def __str__(self):
         return f"{self.title}, {self.author}"
+    
+    def get_content_type_id(self):
+        return ContentType.objects.get_for_model(self.__class__).id
