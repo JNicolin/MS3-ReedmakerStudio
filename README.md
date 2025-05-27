@@ -1,57 +1,74 @@
-# Welcome to Reedmaker's Studio
+# Welcome to Reedmaker Studio
 
-<img src="static/images/test/Test_responsive.png">
+<img src="static/images/test/Test_responsive.png" alt="Reedmaker Studio overview">
 
-Link to the deployed application [Reedmaker Studio](https://reedmakersblog-cde264c272bc.herokuapp.com/)
+👉 [Try the live app](https://reedmakersblog-cde264c272bc.herokuapp.com/)
 
 ## Introduction
 
-For musicians who play reed instruments—like the clarinet, saxophone, oboe, or bassoon—finding the right reed for each performance is both an art and a constant struggle. Each concert hall, piece of music, and personal nuance demands a different response from the reed. That’s why most players keep multiple reeds on hand, each with unique qualities. Over time, these reeds end up scattered in boxes and cases, difficult to track and even harder to learn from.
+For reed players — oboists, bassoonists, clarinetists, saxophonists — the quest for the perfect reed never ends. Each rehearsal, venue, or piece calls for something slightly different. We craft, tweak, and rotate reeds constantly. But too often, those hard-earned insights get lost in a drawer.
 
-| Double blade reeds | Single blade reeds |
-| --------- | ---------|
-|<img src="static/images/content/reedcase_640.jpg" alt="Oboe reedcase" width="400"/> |<img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds" width="400"/>| 
+| Cane               | Single blade reeds |
+| ------------------ | ------------------ |
+| <img src="static/images/content/cane.jpg" alt="Cane" width="400"/> | <img src="static/images/content/clarinet_reeds.png" alt="Clarinet reeds" width="500"/> |
 
-One of the biggest challenges? Remembering which reed did what, when, and why it worked so well.
+🎯 **The challenge:** How do we learn from our own reedmaking — and each other's?
 
-## **This is where Reedmaker Studio comes in**
+---
 
-This application lets you keep a digital record of your reeds — complete with physical measurements, playing characteristics, performance notes, and repertoire history. Think of it as your personal reed logbook, always accessible and built to grow with your experience.
+## Enter Reedmaker Studio
 
-But that’s not all — Reedmaker Studio also enables you to:
--	✍️ Share and read articles on reedmaking.
--	💬 Comment and connect with fellow musicians.
--	📈 Reflect, learn, and identify trends in your reed preferences.
+Reedmaker Studio is a shared space for documenting, reflecting on, and discussing reedmaking. 
 
-**Make progress as a reedmaker.**
+- **Log your reeds** with cane source, dimensions, tone, usage, and repertoire.
+- **Connect with others** by commenting and exchanging experiences.
+- **Publish posts** about your methods, findings, or frustrations.
+- **Discover trends** in your reeds — and in the community.
 
-## User goals
-**Keep a smart, searchable reed archive**
+Reedmaker Studio is built for musicians who want to go beyond trial-and-error, together.
 
-  - Log your reeds with rich details — from cane source and dimensions to tone quality and usage history. Build a personal archive that helps you remember which reed played beautifully for that Mahler solo — and why.
-
-**Discover patterns and sharpen your craft**
-
-  - Your digital reedcase is more than a list. Use it to spot trends over time: what materials suit you best, which shaper yields the right response, how your preferences evolve. Make reedmaking more informed and less trial-and-error.
-
-**Connect with a community of reedmakers**
-
-  - Browse blog posts written by other musicians. Learn from their tools, techniques, and mistakes. Or publish your own thoughts — your challenges, your breakthroughs — and start conversations through comments.
-
-**Reflect, improve, and grow as a musician**
-
-  - Your reeds are part of your voice. By documenting your process, you’re not just keeping records — you’re learning how to become a better, more consistent player. 
+**Document your work. Share your journey. Learn with others.**
 
 # Contents
-1. [Features](#Features)
-2. [User Experience (UX)](#user-experience)
-3. [Information Architecture](#information-architecture)
-4. [Technologies Used](#technologies-used)
-5. [Agile Methodology](#agile-methodology)
-6. [Deployment](#deployment)
+1. [Purpose and goals](#Purpose)
+2. [Features](#Features)
+3. [User experience (UX)](#user-experience)
+4. [Information architecture](#information-architecture)
+5. [Technologies used](#technologies)
+6. [Agile project management](#agile)
+7. [Deployment](#deployment)
 7. [Testing](#testing)
-8. [Known Issues and Future Features](#known-issues-and-future-features)
-9. [Credits](#credits)
+9. [Known Issues and Future Features](#known-issues-and-future-features)
+10. [Credits](#credits)
+
+# Purpose and goals
+## App owner goals
+
+- **Accelerate reedmaking skills among musicians**  
+  Provide tools that help players learn faster by documenting, comparing, and reflecting on their reeds.
+
+- **Build a dedicated community**  
+  Attract reed players (oboists, bassoonists, clarinetists) to share experiences and support each other.
+
+- **Enable knowledge sharing**  
+  Make it easy to publish blog posts and comments, so practical insights spread within the community.
+
+- **Lay the groundwork for targeted resources**  
+  Create a user base that can benefit from future materials like tutorials, guides, or curated content tailored to reedmakers.
+
+## User goals
+
+- **Document reeds with precision**  
+  Keep a searchable archive of each reed’s build, feel, and use in performance.
+
+- **Identify patterns and preferences**  
+  Spot trends over time to improve material choice, shaping, and scraping technique.
+
+- **Engage with fellow reedmakers**  
+  Share insights through blog posts and comments. Learn from others’ successes and struggles.
+
+- **Improve musical consistency**  
+  Use your reed history to support better playing, rehearsal prep, and concert readiness.
 
 # Features
 - Become a member, create a user account to access the full content
