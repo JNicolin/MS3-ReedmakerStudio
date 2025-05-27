@@ -25,8 +25,7 @@ But that’s not all — Reedmaker Studio also enables you to:
 
 **Make progress as a reedmaker.**
 
-## What you gain as a user
-
+## User goals
 **Keep a smart, searchable reed archive**
 
   - Log your reeds with rich details — from cane source and dimensions to tone quality and usage history. Build a personal archive that helps you remember which reed played beautifully for that Mahler solo — and why.
@@ -44,7 +43,7 @@ But that’s not all — Reedmaker Studio also enables you to:
   - Your reeds are part of your voice. By documenting your process, you’re not just keeping records — you’re learning how to become a better, more consistent player. 
 
 # Contents
-1. [Features](#features)
+1. [Features](#Features)
 2. [User Experience (UX)](#user-experience)
 3. [Information Architecture](#information-architecture)
 4. [Technologies Used](#technologies-used)
@@ -223,7 +222,7 @@ This board allows to the development progress in the [GitHub Project Board](http
 ### Functional test cases
 Below is a list of test cases covering the key functionality of the application, used to verify that key features are working as expected
 
-| ID   | Category            | Test Description                                               | Expected Outcome                                          | Actual Outcome |
+| ID   | Epic/Feature            | Test description                                               | Expected outcome                                          | Actual outcome |
 |------|---------------------|----------------------------------------------------------------|-----------------------------------------------------------|----------------|
 | TC01 | User authentication | User can register with email and password                      | User account is created and redirected to homepage        |Pass            |
 | TC02 | User authentication | User can log in with valid credentials                         | User is authenticated and redirected to homepage          |Pass            |
@@ -246,23 +245,30 @@ Below is a list of test cases covering the key functionality of the application,
 | TC19 | Commenting          | Comments modal triggers from detail Post view                  | Modal opens with form                                     |Pass            |
 | TC20 | Commenting          | Anonymous users cannot post comments                           | Redirected to login or see disabled button                |Pass            |
 
-## Code validation, static testing
+## Static validation of code
 ### CSS, HTML and JavaScript validation
  - All CSS was validated in the W3 group validator: No remaining comments or errors
  - All HTML vwas validate in W3 group validator: The HTML validator does not like DTL tags. It does give warnings for this. These are the only remaining.
  - The JavaScript was run through the CI Linter app: No remaining errors
- - Chrome lighthouse testing for performance, accessibility and coding standard
 
-    ![Lighthouse test result](static/images/test/Lighthouse.jpg)
+## Testing for responsiveness
+- Cross-browser testing was done to validate the responsiveness of the application accross different screensizes and positions. Chrome Inspect and the dedicated ResponsivelyApp were used. 
+
+There are no known remaining issues from this testing.
+
+## Automated testing
+- The application was tested using Chrome Lighthouse for Good practices, Performance and Accessibility.
+![Lighthouse test result](static/images/test/Lighthouse.jpg)
+
 
 ## Test of deploy to production environment in Heruko
 ###
 Steps to deploy this application to heruko
-1. **Sign in to Heroku**
-2. **Connect to repository on GitHub** <br>
-Under the Deploy tab, find Deployment method → GitHub and search the correct repo (e.g. MS3-ReedmakerStudio).
+  1. **Sign in to Heroku**
+  2. **Connect to repository on GitHub** <br>
+Under the Deploy tab, find Deployment method → GitHub and search the correct repo (.../MS3-ReedmakerStudio).
 
-3. **ReedStudio expects these config variables**<br>
+  3. **ReedStudio expects these config variables**<br>
 Go to the Settings tab → Reveal Config Vars, and add:
     ```
     DATABASE_URL='your PostgreSQL db url'
@@ -270,14 +276,15 @@ Go to the Settings tab → Reveal Config Vars, and add:
     DJANGO_ENV=production # ensures correct settings file is used
     SECRET_KEY='a secret key of your choice'
     ```
-4. **Push manual deploy from main branch** 
+  4. **Push manual deploy from main branch** 
 
     Result: Deploy works with no errors:<br><br> 
     ![Deploy to production result](static/images/test/DeployResult.jpg)
 
 # Known issues and Future features
 ## Known issues
-- No remaining errors or bugs. Except for the mentioned warnings from the HTML validator on DTL tags.
+- Functional testing has been performed along the development. A number of discoveries were made among which all revealed errors have been corrected in the deployed version.
+- There are no remaining errors or bugs, with the exception of the mentioned warnings from the HTML validator on Django Template Language tags.
 - I have spent quite some time on figuring out how to build a modular way of commenting. As I wanted to implement commenting feature for Reeds as well as for Blogposts, I wanted to learn how to develop this once and use it twice. I came to learn about the generic views from the Django framework, and that was the way to do it!
 
 ## Future features
@@ -289,7 +296,7 @@ I keep a list of feature cards in my [GitHub Project Board](https://github.com/u
 - [Reach out to community members with a request for help](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/44)
 - [Send notices to registered members at addition of blog posts](https://github.com/JNicolin/MS3-ReedmakerStudio/issues/45)
 
-### Are you a developer? Then Fork to contribute
+### Are you a developer? Then I invite you to Fork the repository to contribute
 You can contribute to the enhancement and continued development of this project. This guide will help you get started:
 
 1. **Fork this repo on [GitHub-ReedmakerStudio](https://github.com/JNicolin/MS3-ReedmakerStudio)**
